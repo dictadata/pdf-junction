@@ -8,15 +8,16 @@
 //
 
 // Run `gulp dist-install` to generate 'pdfjs-dist' npm package files.
-const pdfjsLib = require("pdfjs-dist/legacy/build/pdf.js");
+const pdfjsLib = require("../../lib/pdfjs-dist/build/pdf.js");
 
 // Loading file from file system into typed array
 const pdfPath =
-  process.argv[ 2 ] || "../../web/compressed.tracemonkey-pldi-09.pdf";
+  process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf";
 
 // Will be using promises to load document, pages and misc data instead of
 // callback.
 const loadingTask = pdfjsLib.getDocument(pdfPath);
+
 loadingTask.promise
   .then(function (doc) {
     const numPages = doc.numPages;

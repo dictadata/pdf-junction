@@ -6,7 +6,7 @@
 const fs = require('fs');
 const pdf = require('./pdf-parse.js');
 
-var dataBuffer = fs.readFileSync('/var/data/us/census.gov/reference/Nat_State_Topic_File_formats.pdf');
+var dataBuffer = fs.readFileSync('/var/data/us/census.gov/reference/ClassCodes.pdf');
 
 pdf(dataBuffer).then(function (data) {
 

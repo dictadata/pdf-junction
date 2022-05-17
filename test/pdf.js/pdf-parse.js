@@ -9,7 +9,7 @@ function render_page(pageData) {
     normalizeWhitespace: false,
     //do not attempt to combine same line TextItem's. The default value is `false`.
     disableCombineTextItems: false
-  }
+  };
 
   return pageData.getTextContent(render_options)
     .then(function (textContent) {
@@ -39,8 +39,8 @@ const DEFAULT_OPTIONS = {
   pagerender: render_page,
   max: 0,
   //check https://mozilla.github.io/pdf.js/getting_started/
-  version: 'v1.10.100'
-}
+  version: ''
+};
 
 async function PDF(dataBuffer, options) {
   var isDebugMode = false;
@@ -60,7 +60,7 @@ async function PDF(dataBuffer, options) {
   if (typeof options.version != 'string') options.version = DEFAULT_OPTIONS.version;
   if (options.version == 'default') options.version = DEFAULT_OPTIONS.version;
 
-  PDFJS = PDFJS ? PDFJS : require(`./pdf.js/${options.version}/build/pdf.js`);
+  PDFJS = PDFJS ? PDFJS : require("../../lib/pdfjs-dist/build/pdf.js");
 
   ret.version = PDFJS.version;
 
@@ -84,7 +84,7 @@ async function PDF(dataBuffer, options) {
   ret.text = "";
 
   for (var i = 1; i <= counter; i++) {
-    let pageText = await doc.getPage(i).then(pageData => options.pagerender(pageData)).catch((err) => {
+    let pageText = await doc.getPage(i).then((pageData) => options.pagerender(pageData)).catch((err) => {
       // todo log err using debug
       debugger;
       return "";
