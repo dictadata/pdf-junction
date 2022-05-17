@@ -1,0 +1,70 @@
+{
+  "results" : [
+    {
+      "columns" : [
+        {
+          "name" : "item_id",
+          "type" : "NUMBER"
+        },
+        {
+          "name" : "enabled",
+          "type" : "VARCHAR2"
+        }
+      ],
+      "items" : [
+        {
+          "item_id" : 811,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 813,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 814,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 816,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 817,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 818,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 819,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 820,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 821,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 822,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 823,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 824,
+          "enabled" : "Y"
+        },
+        {
+          "item_id" : 825,
+          "enabled" : "Y"
+        }
+      ]
+    }
+  ]
+}

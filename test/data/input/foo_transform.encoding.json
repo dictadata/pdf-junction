@@ -1,0 +1,15 @@
+{
+  "smt": {
+    "model": "*",
+    "locus": "*",
+    "schema": "foo_transform",
+    "key": "*"
+  },
+  "description": "types-only encoding for transforms",
+  "fields": {
+    "Dt Test": "date",
+    "Foo": "keyword",
+    "Bar": "keyword",
+    "Baz": "integer"
+  }
+}

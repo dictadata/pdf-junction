@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "Foo": { "type": "keyword", "key": 1 },
+    "Bar": "keyword",
+    "Baz": "integer",
+    "Fobe": "number",
+    "Dt Test": "date",
+    "enabled": "boolean"
+  }
+}

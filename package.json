@@ -1,0 +1,32 @@
+{
+  "name": "@dictadata/pdf-junction",
+  "version": "1.8.0",
+  "description": "Storage junction for PDF tabular data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/dictadata/js/pdf-junction.git"
+  },
+  "keywords": [
+    "storage",
+    "junction"
+  ],
+  "author": "Drew O. Letcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/dictadata/js/pdf-junction/issues"
+  },
+  "homepage": "https://gitlab.com/dictadata/js/pdf-junction#readme",
+  "engines": {
+    "node": ">=15.0.1"
+  },
+  "dependencies": {
+    "@dictadata/storage-junctions": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Run Test",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "test"],
+      "skipFiles": ["<node_internals>/**"],
+      "outputCapture": "std"
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf createSchema",
+      "program": "${workspaceFolder}/test/pdf/createSchema.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "debug"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf getEncoding",
+      "program": "${workspaceFolder}/test/pdf/getEncoding.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "debug"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf list",
+      "program": "${workspaceFolder}/test/pdf/list.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "debug"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf store",
+      "program": "${workspaceFolder}/test/pdf/store.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "verbose"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf recall",
+      "program": "${workspaceFolder}/test/pdf/recall.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "verbose"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf retrieve",
+      "program": "${workspaceFolder}/test/pdf/retrieve.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "verbose"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf transfers",
+      "program": "${workspaceFolder}/test/pdf/transfers.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "verbose"
+      }
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "pdf dull",
+      "program": "${workspaceFolder}/test/pdf/dull.js",
+      "outputCapture": "std",
+      "env": {
+        "LOG_LEVEL": "verbose"
+      }
+    }
+  ]
+}

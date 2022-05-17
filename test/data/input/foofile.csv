@@ -1,0 +1,9 @@
+"Foo","Bar","Baz","Fobe",Dt Test,enabled
+first,"row",123,1.0,2018-10-07, true
+"second",row,456,2.1,10/07/2018, false
+third,"row your boat", 789,3,10-18-18,true
+fourth, boat ,0,4.3,2018-10-10T14:13:30.500Z,false
+fifth,downstream,-12,+19,10/18/18,true
+"sixth",,,,,
+seventh,"big data",0,4.3,2018-10-10T14:13:30.000-05:00,false
+"eighth","bigger data",12,3.44,"10-OCT-18",false

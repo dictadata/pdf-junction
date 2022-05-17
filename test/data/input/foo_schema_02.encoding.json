@@ -1,0 +1,89 @@
+{
+  "smt": {
+    "model": "*",
+    "locus": "*",
+    "schema": "encoding_template",
+    "key": "=foo"
+  },
+  "fields": {
+    "Foo": {
+      "name": "Foo",
+      "type": "keyword",
+      "size": 64,
+      "default": null,
+      "nullable": false,
+      "key": 2
+    },
+    "Bar": {
+      "name": "Bar",
+      "type": "keyword",
+      "size": 64,
+      "default": null,
+      "nullable": true
+    },
+    "Baz": {
+      "name": "Baz",
+      "type": "integer",
+      "default": null,
+      "nullable": true,
+      "key": 1
+    },
+    "Fobe": {
+      "name": "Fobe",
+      "type": "number",
+      "default": null,
+      "nullable": true
+    },
+    "Dt Test": {
+      "name": "Dt Test",
+      "type": "date",
+      "default": null,
+      "nullable": true
+    },
+    "enabled": {
+      "name": "enabled",
+      "type": "boolean",
+      "default": null,
+      "nullable": true
+    },
+    "tags": {
+      "name": "tags",
+      "type": "list",
+      "_list": {
+        "name": "_list",
+        "type": "keyword",
+        "size": 64
+      }
+    },
+    "widgets": {
+      "name": "widgets",
+      "type": "list",
+      "_list": {
+        "name": "_list",
+        "type": "map",
+        "fields": {
+          "part": {
+            "name": "part",
+            "type": "keyword",
+            "size": 512
+          },
+          "count": {
+            "name": "count",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "indices": {
+    "foo_index_02": {
+      "unique": false,
+      "fields": [{
+        "name": "Bar"
+      },{
+        "name": "Fobe",
+        "order": "DESC"
+      }]
+    }
+  }
+}

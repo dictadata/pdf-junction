@@ -1,0 +1,149 @@
+[
+  {
+    "Foo": "first",
+    "Bar": "row",
+    "Baz": "123",
+    "Fobe": "1.0",
+    "Dt Test": "2018-10-07",
+    "enabled": "true",
+    "tags": [ "fun", "fast" ],
+    "widgets": [
+      {
+        "part": "core",
+        "count": 12
+      },
+      {
+        "part": "screw",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "second",
+    "Bar": "row",
+    "Baz": "456",
+    "Fobe": "2.1",
+    "Dt Test": "10/07/2018",
+    "enabled": "false",
+    "tags": [ "unfun", "slow" ],
+    "widgets": [
+      {
+        "part": "core",
+        "count": 12
+      },
+      {
+        "part": "screw",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "third",
+    "Bar": "row your boat",
+    "Baz": "789",
+    "Fobe": "3",
+    "Dt Test": "10-18-18",
+    "enabled": "true",
+    "tags": [ "row", "boat!" ],
+    "widgets": [
+      {
+        "part": "core",
+        "count": 12
+      },
+      {
+        "part": "screw",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "fourth",
+    "Bar": " boat ",
+    "Baz": "0",
+    "Fobe": "4.3",
+    "Dt Test": "2018-10-10T14:13:30.500Z",
+    "enabled": "false",
+    "tags": [ "ancient", "guardian", "beast" ],
+    "widgets": [
+      {
+        "part": "shaft",
+        "count": 12
+      },
+      {
+        "part": "spring",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "fifth",
+    "Bar": "downstream",
+    "Baz": "-12",
+    "Fobe": "+19",
+    "Dt Test": "10/18/18",
+    "enabled": "true",
+     "tags": [ "wild", "side" ],
+     "widgets": [
+      {
+        "part": "core",
+        "count": 12
+      },
+      {
+        "part": "screw",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "sixth",
+    "Bar": null,
+    "Baz": 6,
+    "Fobe": null,
+    "Dt Test": null,
+    "enabled": null
+  },
+  {
+    "Foo": "seventh",
+    "Bar": "big data",
+    "Baz": "0",
+    "Fobe": "4.3",
+    "Dt Test": "2018-10-10T14:13:30.000-05:00",
+    "enabled": "false",
+    "widgets": [
+      {
+        "part": "gear",
+        "count": 12
+      },
+      {
+        "part": "screw",
+        "count": 9
+      },
+      {
+        "part": "shaft",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "Foo": "eighth",
+    "Bar": "bigger data",
+    "Baz": "12",
+    "Fobe": "3.4",
+    "Dt Test": "10-OCT-18",
+    "enabled": "false",
+    "widgets": [
+      {
+        "part": "core",
+        "count": 0
+      },
+      {
+        "part": "screw",
+        "count": 1000000
+      },
+      {
+        "part": "shaft",
+        "count": 3
+      }
+    ]
+  }
+]
