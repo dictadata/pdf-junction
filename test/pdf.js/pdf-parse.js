@@ -1,3 +1,7 @@
+/**
+ * Copied from npm pdf-parse package.
+ */
+
 var PDFJS = null;
 
 function render_page(pageData) {
@@ -84,11 +88,13 @@ async function PDF(dataBuffer, options) {
   ret.text = "";
 
   for (var i = 1; i <= counter; i++) {
-    let pageText = await doc.getPage(i).then((pageData) => options.pagerender(pageData)).catch((err) => {
-      // todo log err using debug
-      debugger;
-      return "";
-    });
+    let pageText = await doc.getPage(i)
+      .then((pageData) => options.pagerender(pageData))
+      .catch((err) => {
+        // todo log err using debug
+        debugger;
+        return "";
+      });
 
     ret.text = `${ret.text}\n\n${pageText}`;
   }

@@ -1,14 +1,15 @@
 /**
  * parsepdf
  *
- * Parse the Tiger Shapfile field description document.
+ * Example of using pdf-parse.js
  */
+
 const fs = require('fs');
-const pdf = require('./pdf-parse.js');
+const parser = require('./pdf-parse.js');
 
 var dataBuffer = fs.readFileSync('/var/data/us/census.gov/reference/ClassCodes.pdf');
 
-pdf(dataBuffer).then(function (data) {
+parser(dataBuffer).then(function (data) {
 
   // number of pages
   console.log(data.numpages);

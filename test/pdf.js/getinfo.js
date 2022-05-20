@@ -7,73 +7,74 @@
 // `gulp singlefile` before running the example.
 //
 
-// Run `gulp dist-install` to generate 'pdfjs-dist' npm package files.
 const pdfjsLib = require("../../lib/pdfjs-dist/build/pdf.js");
+//pdfjsLib.GlobalWorkerOptions.workerSrc = '../../lib/pdfjs-dist/build/pdf.worker.js';
 
 // Loading file from file system into typed array
-const pdfPath =
-  process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf";
+// const pdfPath = "./helloworld.pdf"
+const pdfPath = process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf";
 
-// Will be using promises to load document, pages and misc data instead of
-// callback.
-const loadingTask = pdfjsLib.getDocument(pdfPath);
+const fs = require("fs");
 
-loadingTask.promise
-  .then(function (doc) {
+async function getInfo() {
+  try {
+    var loadingTask = pdfjsLib.getDocument({ url: pdfPath, fontExtraProperties: true });
+    var doc = await loadingTask.promise;
+
     const numPages = doc.numPages;
     console.log("# Document Loaded");
     console.log("Number of Pages: " + numPages);
     console.log();
 
-    let lastPromise; // will be used to chain promises
-    lastPromise = doc.getMetadata().then(function (data) {
-      console.log("# Metadata Is Loaded");
-      console.log("## Info");
-      console.log(JSON.stringify(data.info, null, 2));
-      console.log();
-      if (data.metadata) {
-        console.log("## Metadata");
-        console.log(JSON.stringify(data.metadata.getAll(), null, 2));
-        console.log();
-      }
-    });
+    let docdata = await doc.getMetadata();
+    console.log("# Metadata Is Loaded");
+    console.log("## Info");
+    console.log(JSON.stringify(docdata.info, null, 2));
+    console.log();
 
-    const loadPage = function (pageNum) {
-      return doc.getPage(pageNum).then(function (page) {
-        console.log("# Page " + pageNum);
-        const viewport = page.getViewport({ scale: 1.0 });
-        console.log("Size: " + viewport.width + "x" + viewport.height);
-        console.log();
-        return page
-          .getTextContent()
-          .then(function (content) {
-            // Content contains lots of information about the text layout and
-            // styles, but we need only strings at the moment
-            const strings = content.items.map(function (item) {
-              return item.str;
-            });
-            console.log("## Text Content");
-            console.log(strings.join(" "));
-            // Release page resources.
-            page.cleanup();
-          })
-          .then(function () {
-            console.log();
-          });
+    if (docdata.metadata) {
+      console.log("## Metadata");
+      console.log(JSON.stringify(docdata.metadata.getAll(), null, 2));
+      console.log();
+    }
+
+    let markInfo = await doc.getMarkInfo();
+    console.log("Marked = " + markInfo.Marked)
+
+    async function loadPage(pageNum) {
+      let page = await doc.getPage(pageNum)
+      console.log("# Page " + pageNum);
+
+      const viewport = page.getViewport({ scale: 1.0 });
+      console.log("Size: " + viewport.width + "x" + viewport.height);
+      console.log();
+
+      let content = await page.getTextContent({ includeMarkedContent: true });
+      fs.writeFileSync("./content_items.json", JSON.stringify(content.items, null, 2));
+
+      // Content contains lots of information about the text layout and
+      // styles, but we need only strings at the moment
+      const strings = content.items.map(function (item) {
+        return item.str ? item.str : '';
       });
+      console.log("## Text Content");
+      console.log(strings.join(" "));
+
+      // Release page resources.
+      page.cleanup();
     };
-    // Loading of the first page will wait on metadata and subsequent loadings
-    // will wait on the previous pages.
+
     for (let i = 1; i <= numPages; i++) {
-      lastPromise = lastPromise.then(loadPage.bind(null, i));
+      await loadPage(i);
     }
-    return lastPromise;
-  })
-  .then(
-    function () {
-      console.log("# End of Document");
-    },
-    function (err) {
-      console.error("Error: " + err);
-    }
-  );
+
+    console.log("# End of Document");
+  }
+  catch (err) {
+    console.error("Error: " + err);
+  }
+}
+
+(async () => {
+  await getInfo();
+})();

@@ -4,6 +4,26 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+  {
+    "name": "pdf getInfo",
+    "program": "${workspaceFolder}/test/pdf.js/getInfo.js",
+    "cwd":"${workspaceFolder}/test/pdf.js/",
+    "request": "launch",
+    "skipFiles": [
+      "<node_internals>/**"
+    ],
+    "type": "node"
+  },
+  {
+    "name": "pdf getAsJson",
+    "program": "${workspaceFolder}/test/pdf.js/getAsJson.js",
+    "cwd":"${workspaceFolder}/test/pdf.js/",
+    "request": "launch",
+    "skipFiles": [
+      "<node_internals>/**"
+    ],
+    "type": "node"
+  },
     {
       "type": "pwa-node",
       "request": "launch",
