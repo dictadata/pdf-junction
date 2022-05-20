@@ -16,7 +16,7 @@ const pdfPath = process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCod
 
 const fs = require("fs");
 
-async function getInfo() {
+async function getContent() {
   try {
     var loadingTask = pdfjsLib.getDocument({ url: pdfPath, fontExtraProperties: true });
     var doc = await loadingTask.promise;
@@ -50,7 +50,7 @@ async function getInfo() {
       console.log();
 
       let content = await page.getTextContent({ includeMarkedContent: true });
-      fs.writeFileSync("./content_items.json", JSON.stringify(content.items, null, 2));
+      fs.writeFileSync("./content_items_" + pageNum + ".json", JSON.stringify(content.items, null, 2));
 
       // Content contains lots of information about the text layout and
       // styles, but we need only strings at the moment
@@ -76,5 +76,5 @@ async function getInfo() {
 }
 
 (async () => {
-  await getInfo();
+  await getContent();
 })();

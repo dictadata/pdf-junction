@@ -1,0 +1,3106 @@
+[
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid0",
+    "tag": "P"
+  },
+  {
+    "str": "H7",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      691.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid1",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      708.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "The balance of a statistical county",
+    "dir": "ltr",
+    "width": 150.74858399999982,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      708.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "equivalent feature excluding the",
+    "dir": "ltr",
+    "width": 140.98678799999985,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      697.2
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "incorporated place(s) that separately",
+    "dir": "ltr",
+    "width": 162.3838559999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      685.68
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "qualify as EC places",
+    "dir": "ltr",
+    "width": 90.40393199999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      674.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid2",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      691.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Economic Census Place",
+    "dir": "ltr",
+    "width": 108.24129599999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      691.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid3",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      122.64,
+      653.76
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "I1",
+    "dir": "ltr",
+    "width": 8.296679999999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      122.64,
+      653.76
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid4",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.407963855421688,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      130.93668,
+      653.76
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "An EC Place that is a whole Hawaiian",
+    "dir": "ltr",
+    "width": 167.15768399999993,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      659.52
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Island",
+    "dir": "ltr",
+    "width": 26.533440000000002,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      648
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid5",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 16.239614457831326,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      211.33343999999997,
+      648
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Economic Census Place",
+    "dir": "ltr",
+    "width": 108.24129599999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      653.76
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid6",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      122.64,
+      627.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "I2",
+    "dir": "ltr",
+    "width": 8.296679999999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      122.64,
+      627.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid7",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.407963855421688,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      130.93668,
+      627.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "An EC Place that is a balance of a",
+    "dir": "ltr",
+    "width": 151.79836799999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      633.24
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Hawaiian Island",
+    "dir": "ltr",
+    "width": 70.45006799999997,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      621.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid8",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 11.830314457831332,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      255.2500679999999,
+      621.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Economic Census Place",
+    "dir": "ltr",
+    "width": 108.24129599999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      627.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid9",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      595.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "M1",
+    "dir": "ltr",
+    "width": 13.814519999999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      595.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid10",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      607.08
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "A military or other defense installation",
+    "dir": "ltr",
+    "width": 166.54514399999977,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      607.08
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "that is not entirely within a census",
+    "dir": "ltr",
+    "width": 149.43187199999988,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      595.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "designated place",
+    "dir": "ltr",
+    "width": 75.48484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      584.04
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid11",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      595.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Locality Point, Military Installation",
+    "dir": "ltr",
+    "width": 147.24166799999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      595.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid12",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      563.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "M2",
+    "dir": "ltr",
+    "width": 13.814519999999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      563.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid13",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.131072289156629,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.69451999999998,
+      563.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "A military or other defense installation",
+    "dir": "ltr",
+    "width": 166.54514399999977,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      569.4
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "entirely within a place",
+    "dir": "ltr",
+    "width": 95.52436799999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      557.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid14",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      569.4
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Designated Place, Economic",
+    "dir": "ltr",
+    "width": 164.431632,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      569.4
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Place, Military Installation",
+    "dir": "ltr",
+    "width": 149.39103599999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      557.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid15",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "M3",
+    "dir": "ltr",
+    "width": 13.814519999999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid16",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.131072289156629,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.69451999999998,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Health care facility",
+    "dir": "ltr",
+    "width": 81.76363199999993,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid17",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 10.694414457831336,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      266.56363199999987,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point",
+    "dir": "ltr",
+    "width": 59.39745599999988,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      543.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid18",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      522.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "M4",
+    "dir": "ltr",
+    "width": 13.814519999999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      522.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid19",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.131072289156629,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.69451999999998,
+      522.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Federally managed park, forest, or other",
+    "dir": "ltr",
+    "width": 178.35670799999968,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      528.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "area",
+    "dir": "ltr",
+    "width": 19.93394399999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      516.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid20",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 16.902214457831327,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      204.73394399999995,
+      516.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point, Park",
+    "dir": "ltr",
+    "width": 85.48568399999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      522.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid21",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "M9",
+    "dir": "ltr",
+    "width": 13.814519999999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      119.88,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid22",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.131072289156629,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.69451999999998,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Federal facility not classified elsewhere",
+    "dir": "ltr",
+    "width": 173.2701359999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid23",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 1.5070144578313416,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      358.0701359999998,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point",
+    "dir": "ltr",
+    "width": 59.39745599999988,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      502.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid24",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "N1",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid25",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "National Guard installation",
+    "dir": "ltr",
+    "width": 117.11366399999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid26",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 7.145214457831337,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      301.91366399999987,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point, Military Installation",
+    "dir": "ltr",
+    "width": 147.24166799999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      487.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid27",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      467.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "N9",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      467.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid28",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      467.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "International, state, tribal, or local",
+    "dir": "ltr",
+    "width": 147.14804399999994,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      472.92
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "government facility",
+    "dir": "ltr",
+    "width": 83.44288799999994,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      461.4
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid29",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 10.525814457831334,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      268.2428879999999,
+      461.4
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point, Military Installation",
+    "dir": "ltr",
+    "width": 147.24166799999995,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      467.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid30",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      440.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "R0",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      440.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid31",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      440.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Park, forest, or other reserve not federally",
+    "dir": "ltr",
+    "width": 184.57672799999955,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      446.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "managed or unknown",
+    "dir": "ltr",
+    "width": 96.11300399999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      435.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid32",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 9.253714457831345,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      280.9130039999998,
+      435.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Park",
+    "dir": "ltr",
+    "width": 20.463815999999962,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      440.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid33",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      408.9601
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "S1",
+    "dir": "ltr",
+    "width": 12.141240000000003,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      408.9601
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid34",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      420.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "A nonfunctioning county subdivision that",
+    "dir": "ltr",
+    "width": 178.29196799999974,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      420.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "is coextensive with a census designated",
+    "dir": "ltr",
+    "width": 177.8288279999999,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      408.9601
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "place",
+    "dir": "ltr",
+    "width": 23.773524,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      397.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid35",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      408.9601
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      408.9601
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid36",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      371.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "S2",
+    "dir": "ltr",
+    "width": 12.141240000000003,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      371.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid37",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      382.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "A statistical county subdivision that is",
+    "dir": "ltr",
+    "width": 164.31211199999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      382.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "coextensive with a census designated",
+    "dir": "ltr",
+    "width": 167.74631999999994,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      371.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "place",
+    "dir": "ltr",
+    "width": 23.773524,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      359.76
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid38",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      371.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      371.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid39",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      333.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "S3",
+    "dir": "ltr",
+    "width": 12.141240000000003,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.72,
+      333.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid40",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      345.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "A statistical county subdivision that is",
+    "dir": "ltr",
+    "width": 164.31211199999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      345.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "coextensive with a legal American Indian,",
+    "dir": "ltr",
+    "width": 183.33272399999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      333.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Alaska Native, or Native Hawaiian area",
+    "dir": "ltr",
+    "width": 173.2671479999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      322.08
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid41",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      333.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      333.6
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid42",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      301.6801
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "T1",
+    "dir": "ltr",
+    "width": 11.777700000000005,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      301.6801
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid43",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.227138554216869,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      132.7377,
+      301.6801
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "An active county subdivision that is not",
+    "dir": "ltr",
+    "width": 171.6994439999998,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      307.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "coextensive with an incorporated place",
+    "dir": "ltr",
+    "width": 172.18150799999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      295.92
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid44",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      307.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "County Subdivision, Economic Census",
+    "dir": "ltr",
+    "width": 171.75621599999997,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      307.44
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Place",
+    "dir": "ltr",
+    "width": 24.85916400000007,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      295.92
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid45",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      269.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "T2",
+    "dir": "ltr",
+    "width": 11.777700000000005,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      269.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid46",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      281.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "An active county subdivision that is",
+    "dir": "ltr",
+    "width": 154.95369599999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      281.16
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "coextensive with a census designated",
+    "dir": "ltr",
+    "width": 167.74631999999994,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      269.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "place",
+    "dir": "ltr",
+    "width": 23.773524,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      258.2401
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid47",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      269.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      269.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid48",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      237.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "T5",
+    "dir": "ltr",
+    "width": 11.777700000000005,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      237.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid49",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.227138554216869,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      132.7377,
+      237.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "An active county subdivision that is",
+    "dir": "ltr",
+    "width": 154.95369599999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      243.48
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "coextensive with an incorporated place",
+    "dir": "ltr",
+    "width": 172.18150799999987,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      231.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid50",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 1.6163144578313502,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      356.98150799999974,
+      231.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      237.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid51",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      205.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "T8",
+    "dir": "ltr",
+    "width": 11.777700000000005,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      205.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid52",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      217.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "The balance of a county subdivision",
+    "dir": "ltr",
+    "width": 158.86299599999978,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      217.32
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "excluding the incorporated place(s) that",
+    "dir": "ltr",
+    "width": 175.05098399999966,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      205.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "separately qualify as EC places",
+    "dir": "ltr",
+    "width": 139.4768519999999,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      194.28
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid53",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      205.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Economic Census Place",
+    "dir": "ltr",
+    "width": 108.24129599999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      205.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid54",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "T9",
+    "dir": "ltr",
+    "width": 11.777700000000005,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.96,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid55",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.227138554216869,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      132.7377,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "An inactive county subdivision",
+    "dir": "ltr",
+    "width": 133.31659199999999,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid56",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.518414457831327,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      318.11659199999997,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "County Subdivision",
+    "dir": "ltr",
+    "width": 85.44484799999991,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      179.64
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid57",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      159.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "U1",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      159.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid58",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      159.12
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "A census designated place with an",
+    "dir": "ltr",
+    "width": 153.83020799999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      164.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "official federally recognized name",
+    "dir": "ltr",
+    "width": 148.42790399999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      153.36
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid59",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      164.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Designated Place, Economic",
+    "dir": "ltr",
+    "width": 164.431632,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      164.88
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Place",
+    "dir": "ltr",
+    "width": 61.56773999999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      153.36
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid60",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      132.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "U2",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      132.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid61",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      132.96
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "A census designated place without an",
+    "dir": "ltr",
+    "width": 167.7483119999999,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      138.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "official federally recognized name",
+    "dir": "ltr",
+    "width": 148.42790399999984,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      127.2
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid62",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      138.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Designated Place, Economic",
+    "dir": "ltr",
+    "width": 164.431632,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      138.72
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "Census Place",
+    "dir": "ltr",
+    "width": 61.56773999999989,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      127.2
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid63",
+    "tag": "P"
+  },
+  {
+    "str": "",
+    "dir": "ltr",
+    "width": 0,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      106.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "U3",
+    "dir": "ltr",
+    "width": 12.738840000000009,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      120.36,
+      106.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid64",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 5.190879518072291,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      133.09884,
+      106.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Alternate official common name for a",
+    "dir": "ltr",
+    "width": 162.82309199999978,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      112.56
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": true
+  },
+  {
+    "str": "census designated place",
+    "dir": "ltr",
+    "width": 109.9135799999999,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      184.8,
+      101.04
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  },
+  {
+    "type": "beginMarkedContentProps",
+    "id": "page3R_mcid65",
+    "tag": "P"
+  },
+  {
+    "str": " ",
+    "dir": "ltr",
+    "width": 7.868114457831348,
+    "height": 0,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      294.71357999999975,
+      101.04
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "str": "Locality Point",
+    "dir": "ltr",
+    "width": 59.39745599999988,
+    "height": 9.96,
+    "transform": [
+      9.96,
+      0,
+      0,
+      9.96,
+      373.08,
+      106.8
+    ],
+    "fontName": "Helvetica",
+    "hasEOL": false
+  },
+  {
+    "type": "endMarkedContent"
+  }
+]

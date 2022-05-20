@@ -31,23 +31,26 @@ async function getAsJson() {
     let markInfo = await doc.getMarkInfo();
     console.log("Marked = " + markInfo.Marked)
 
-    var rows = []
+    var data = {
+      rows: [],
+      header: null
+    }
 
     for (let i = 1; i <= numPages; i++) {
-      await parsePage(doc, i, rows);
+      await parsePage(doc, i, data);
     }
 
     console.log("# End of Document");
 
     console.log("write content_rows.json");
-    fs.writeFileSync("./content_rows.json", JSON.stringify(rows, null, 2));
+    fs.writeFileSync("./content_rows.json", JSON.stringify(data.rows, null, 2));
   }
   catch (err) {
     console.error("Error: " + err);
   }
 }
 
-async function parsePage(doc, pageNum, rows) {
+async function parsePage(doc, pageNum, data) {
   try {
     let page = await doc.getPage(pageNum)
     console.log("# Page " + pageNum);
@@ -92,7 +95,14 @@ async function parsePage(doc, pageNum, rows) {
         // determine if new row
         if (x < prevCell.x && y < prevCell.y) {
           if (row.length > 0) {
-            rows.push(row);
+            if (!data.header)
+              data.header = row;
+            else {
+              let obj = {};
+              for (let i = 0; i < data.header.length; i++)
+                obj[ data.header[ i ] ] = (i < row.length) ? row[ i ] : undefined;
+              data.rows.push(obj);
+            }
             row = [];
           }
         }
