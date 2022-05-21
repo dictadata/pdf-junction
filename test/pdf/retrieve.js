@@ -14,34 +14,11 @@ async function tests() {
   logger.info("=== pdf retrieve");
   if (await retrieve({
     origin: {
-      smt: "pdf|connection string|foo_schema|*",
-      pattern: {
-        match: {
-          "Foo": 'twenty'
-        }
-      }
+      smt: "pdf|/var/data/us/census.gov/reference/ClassCodes.pdf|*|*",
+      pattern: {}
     },
     terminal: {
       output: "./test/data/output/pdf/retrieve_01.json"
-    }
-  })) return 1;
-
-  logger.info("=== pdf retrieve with pattern");
-  if (await retrieve({
-    origin: {
-      smt: "pdf|connection string|foo_transfer|*",
-      pattern: {
-        match: {
-          "Foo": "first",
-          "Baz": { "gte": 0, "lte": 1000 }
-        },
-        count: 3,
-        order: { "Dt Test": "asc" },
-        fields: [ "Foo", "Baz" ]
-      }
-    },
-    terminal: {
-      output: "./test/data/output/pdf/retrieve_02.json"
     }
   })) return 1;
 

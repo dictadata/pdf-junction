@@ -5,36 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "pdf getContent",
-      "program": "${workspaceFolder}/test/pdf.js/getContent.js",
-      "cwd":"${workspaceFolder}/test/pdf.js/",
-      "request": "launch",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
-      "name": "pdf getAsJson",
-      "program": "${workspaceFolder}/test/pdf.js/getAsJson.js",
-      "cwd":"${workspaceFolder}/test/pdf.js/",
-      "request": "launch",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
-      "name": "pdf stream",
-      "program": "${workspaceFolder}/test/pdf.js/stream-pdf-data.js",
-      "cwd":"${workspaceFolder}/test/pdf.js/",
-      "request": "launch",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
       "type": "pwa-node",
       "request": "launch",
       "name": "Run Test",
@@ -42,6 +12,15 @@
       "runtimeArgs": ["run-script", "test"],
       "skipFiles": ["<node_internals>/**"],
       "outputCapture": "std"
+    },
+    {
+      "name": "pdf parser",
+      "program": "${workspaceFolder}/test/pdf/pdfDataParser.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
     },
     {
       "type": "pwa-node",
