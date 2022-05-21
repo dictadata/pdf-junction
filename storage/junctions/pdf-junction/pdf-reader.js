@@ -5,6 +5,7 @@
 
 const { StorageReader } = require('@dictadata/storage-junctions');
 const { logger } = require('@dictadata/storage-junctions/utils');
+const pdfDataParser = require('./pdf-data-parser');
 
 module.exports = class PdfReader extends StorageReader {
 
@@ -15,6 +16,40 @@ module.exports = class PdfReader extends StorageReader {
    */
   constructor(storageJunction, options = null) {
     super(storageJunction, options);
+
+    var encoder = this.junction.createEncoder(options);
+
+    let pdfOptions = {
+      url: this.options.smt.locus
+    }
+
+    this.started = false;
+    let parser = this.parser = new pdfDataParser(pdfOptions);
+    var reader = this;
+
+    // eslint-disable-next-line arrow-parens
+    parser.on('data', (data) => {
+      if (data.value) {
+        let construct = encoder.cast(data.value);
+        construct = encoder.filter(construct);
+        construct = encoder.select(construct);
+        //logger.debug(JSON.stringify(construct));
+
+        if (construct && !reader.push(construct)) {
+          //parser.pause();  // If push() returns false stop reading from source.
+        }
+      }
+
+    });
+
+    parser.on('end', () => {
+      reader.push(null);
+    });
+
+    parser.on('error', function (err) {
+      //logger.error(err);
+      throw err;
+    });
 
   }
 
@@ -27,14 +62,10 @@ module.exports = class PdfReader extends StorageReader {
 
     // read up to size constructs
     try {
-      let pattern = {};
-      let results = await this.junction.retrieve(pattern);
-
-      for (let i = 0; i < results.length; i++)
-        this.push(results[ i ]);
-
-      // when done reading from source
-      this.push(null);
+      if (!this.started) {
+        this.started = true;
+        this.parser.parsePDF();
+      }
     }
     catch (err) {
       logger.error(err.message);

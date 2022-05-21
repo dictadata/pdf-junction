@@ -8,8 +8,7 @@ const { logger } = require('@dictadata/storage-junctions/utils');
 
 const PdfReader = require("./pdf-reader");
 const PdfWriter = require("./pdf-writer");
-const encoder = require("./pdf-encoder");
-const queryEncoder = require("./pdf-query-encoder");
+//const encoder = require("./pdf-encoder");
 
 
 module.exports = class PdfJunction extends StorageJunction {
@@ -63,7 +62,7 @@ module.exports = class PdfJunction extends StorageJunction {
         let srcField = {};
 
         // convert to dictadata storage field
-        let field = encoder.storageField(srcField);
+        let field = srcField;  //encoder.storageField(srcField);
 
         // add/update engram
         this.engram.add(field);
