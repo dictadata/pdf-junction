@@ -13,6 +13,20 @@ const PdfWriter = require("./pdf-writer");
 
 module.exports = class PdfJunction extends StorageJunction {
 
+  // storage capabilities, sub-class must override
+  capabilities = {
+    filesystem: false,  // storage source is filesystem
+    sql: false,        // storage source is SQL
+    keystore: false,   // supports key-value storage
+
+    encoding: false,   // get encoding from source
+    reader: true,     // stream reader
+    writer: false,     // stream writer
+    store: false,      // store/recall individual constructs
+    query: false,      // select/filter data at source
+    aggregate: false   // aggregate data at source
+  }
+
   /**
    *
    * @param {*} SMT 'pdf|connection string|schema name|key' or an Engram object

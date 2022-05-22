@@ -25,18 +25,8 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "pdf createSchema",
-      "program": "${workspaceFolder}/test/pdf/createSchema.js",
-      "outputCapture": "std",
-      "env": {
-        "LOG_LEVEL": "debug"
-      }
-    },
-    {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "pdf getEncoding",
-      "program": "${workspaceFolder}/test/pdf/getEncoding.js",
+      "name": "pdf codify",
+      "program": "${workspaceFolder}/test/pdf/codify.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "debug"

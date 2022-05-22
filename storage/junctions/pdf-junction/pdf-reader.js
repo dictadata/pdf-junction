@@ -20,7 +20,7 @@ module.exports = class PdfReader extends StorageReader {
     var encoder = this.junction.createEncoder(options);
 
     let pdfOptions = {
-      url: this.options.smt.locus
+      url: this.junction.smt.locus
     }
 
     this.started = false;

@@ -1,29 +1,25 @@
 /**
- * test/pdf/encoding
+ * test/codify
  */
 "use strict";
 
 require("../register");
+const { codify } = require("@dictadata/storage-junctions/test")
 const { logger } = require("@dictadata/storage-junctions/utils");
-const { getEncoding } = require("@dictadata/storage-junctions/test");
 
-logger.info("=== Test: pdf");
+logger.info("=== tests: pdf codify");
 
 async function tests() {
-
-  logger.info("=== pdf getEncoding");
-  if (await getEncoding({
+  logger.verbose("=== ClassCodes.pdf");
+  if (await codify({
     origin: {
       smt: "pdf|/var/data/us/census.gov/reference/ClassCodes.pdf|*|*",
       options: {}
     },
-    terminal: {
-      output: './test/data/output/pdf/schema.encoding.json'
-    }
+    outputFile1: './test/data/output/pdf/ClassCodes.encoding.json'
   })) return 1;
-
 }
 
 (async () => {
-  await tests();
+  if (await tests()) return 1;
 })();
