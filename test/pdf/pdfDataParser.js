@@ -9,7 +9,8 @@ const fs = require("fs");
 
 (async () => {
   const options = {
-    url: process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf"
+    //url: process.argv[ 2 ] || "./test/data/input/pdf/ClassCodes.pdf"
+    url: process.argv[ 2 ] || "./test/data/input/pdf/Nat_State_Topic_File_formats.pdf"
   }
   let parser = new pdfDataParser(options)
   let rows = [];

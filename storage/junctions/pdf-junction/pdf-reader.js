@@ -29,13 +29,14 @@ module.exports = class PdfReader extends StorageReader {
 
     // eslint-disable-next-line arrow-parens
     parser.on('data', (data) => {
-      if (data.value) {
-        let construct = encoder.cast(data.value);
+      if (data) {
+        let construct = encoder.cast(data);
         construct = encoder.filter(construct);
         construct = encoder.select(construct);
         //logger.debug(JSON.stringify(construct));
 
-        if (construct && !reader.push(construct)) {
+        if (construct) {
+          reader.push(construct);
           //parser.pause();  // If push() returns false stop reading from source.
         }
       }

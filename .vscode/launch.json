@@ -5,15 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "Run Test",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "test"],
-      "skipFiles": ["<node_internals>/**"],
-      "outputCapture": "std"
-    },
-    {
       "name": "pdf parser",
       "program": "${workspaceFolder}/test/pdf/pdfDataParser.js",
       "request": "launch",
@@ -29,7 +20,7 @@
       "program": "${workspaceFolder}/test/pdf/codify.js",
       "outputCapture": "std",
       "env": {
-        "LOG_LEVEL": "debug"
+        "LOG_LEVEL": "verbose"
       }
     },
     {
@@ -37,26 +28,6 @@
       "request": "launch",
       "name": "pdf list",
       "program": "${workspaceFolder}/test/pdf/list.js",
-      "outputCapture": "std",
-      "env": {
-        "LOG_LEVEL": "debug"
-      }
-    },
-    {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "pdf store",
-      "program": "${workspaceFolder}/test/pdf/store.js",
-      "outputCapture": "std",
-      "env": {
-        "LOG_LEVEL": "verbose"
-      }
-    },
-    {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "pdf recall",
-      "program": "${workspaceFolder}/test/pdf/recall.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "verbose"
@@ -75,18 +46,8 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "pdf transfers",
+      "name": "pdf transfer",
       "program": "${workspaceFolder}/test/pdf/transfers.js",
-      "outputCapture": "std",
-      "env": {
-        "LOG_LEVEL": "verbose"
-      }
-    },
-    {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "pdf dull",
-      "program": "${workspaceFolder}/test/pdf/dull.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "verbose"

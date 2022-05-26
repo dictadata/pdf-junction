@@ -13,10 +13,10 @@ async function tests() {
   logger.verbose("=== ClassCodes.pdf");
   if (await codify({
     origin: {
-      smt: "pdf|/var/data/us/census.gov/reference/ClassCodes.pdf|*|*",
+      smt: "pdf|.test/data/input/pdf/ClassCodes.pdf|*|*",
       options: {}
     },
-    outputFile1: './test/data/output/pdf/ClassCodes.encoding.json'
+    output: "./test/data/output/pdf/codify_1.json"
   })) return 1;
 }
 

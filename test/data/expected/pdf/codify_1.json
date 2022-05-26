@@ -1,0 +1,27 @@
+{
+  "name": "*",
+  "type": "engram",
+  "smt": {
+    "model": "any",
+    "locus": "*",
+    "schema": "*",
+    "key": "*"
+  },
+  "fields": [
+    {
+      "name": "Class Code",
+      "type": "keyword",
+      "size": 2
+    },
+    {
+      "name": "Class Code Description",
+      "type": "text",
+      "size": 271
+    },
+    {
+      "name": "Associated Geographic Entity",
+      "type": "text",
+      "size": 89
+    }
+  ]
+}
