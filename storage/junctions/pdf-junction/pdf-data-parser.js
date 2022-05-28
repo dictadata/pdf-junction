@@ -10,14 +10,9 @@
 const pdfjsLib = require("../../../lib/pdfjs-dist/build/pdf.js");
 //pdfjsLib.GlobalWorkerOptions.workerSrc = '../../lib/pdfjs-dist/build/pdf.worker.js';
 
-// Loading file from file system into typed array
-// const pdfPath = "./helloworld.pdf"
-const pdfPath = process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf";
-
-const fs = require("fs");
-const { builtinModules } = require("module");
-
 const EventEmitter = require('node:events');
+
+const { logger } = require('@dictadata/storage-junctions/utils');
 
 module.exports = exports = class PdfDataParser extends EventEmitter {
 
@@ -25,8 +20,8 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
     super();
 
     this.options = options;
-    this.doc
-    this.header
+    this.doc;
+    this.header;
   }
 
   async parsePDF() {
@@ -37,57 +32,57 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
       this.doc = await loadingTask.promise;
 
       const numPages = this.doc.numPages;
-      console.log("# Document Loaded");
+      logger.debug("# Document Loaded");
 
       let docdata = await this.doc.getMetadata();
-      console.log("# Metadata Loaded");
-      console.log(docdata.info.title);
+      logger.debug("# Metadata Loaded");
+      logger.debug(docdata.info.title);
 
       let markInfo = await this.doc.getMarkInfo();
-      console.log("Marked = " + markInfo.Marked)
+      logger.debug("Marked = " + markInfo.Marked);
 
       for (let i = 1; i <= numPages; i++) {
         await this.parsePage(i);
       }
 
       this.emit("end");
-      console.log("# End of Document");
+      logger.debug("# End of Document");
     }
     catch (err) {
-      console.error("Error: " + err);
+      logger.error("Error: " + err);
       this.emit("error", err);
     }
   }
 
   async parsePage(pageNum) {
     try {
-      let page = await this.doc.getPage(pageNum)
-      console.log("# Page " + pageNum);
+      let page = await this.doc.getPage(pageNum);
+      logger.debug("# Page " + pageNum);
 
       const { width, height
       } = page.getViewport({
         scale: 1.0
       });
-      console.log("Size: " + width + "x" + height);
+      logger.debug("Size: " + width + "x" + height);
 
       let content = await page.getTextContent({
         includeMarkedContent: true
       });
-      console.log("## Text Content");
+      logger.debug("## Text Content");
 
-      let row = []
+      let row = [];
       let cell = {
         text: "",
         // cell lower-left
         x: width,
         y: height
-      }
+      };
       let prevCell = {
         text: "",
         // cell lower-left
         x: 0,
         y: 0
-      }
+      };
 
       for (let item of content.items) {
         if (item.type === "beginMarkedContentProps") {
@@ -96,7 +91,7 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
             // cell lower-left
             x: width,
             y: height
-          }
+          };
         }
         else if (item.type === "endMarkedContent") {
           row.push(cell.text);
@@ -130,15 +125,15 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
           if (item.height > 0)
             cell.text += item.str;
         }
-      };
+      }
 
       // Release page resources.
       page.cleanup();
     }
     catch (err) {
-      console.error("Error: " + err);
+      logger.error("Error: " + err);
       this.emit("error", err);
     }
-  };
+  }
 
-}
+};
