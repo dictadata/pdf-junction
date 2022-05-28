@@ -16,8 +16,8 @@ async function tests() {
       smt: "pdf|/var/data/us/census.gov/reference/ClassCodes.pdf|*|*",
     },
     terminal: {
-      smt: "json|./test/data/output/pdf/|transfer_1.json|*",
-      output: "./test/data/output/pdf/transfer_1.json"
+      smt: "json|./data/output/pdf/|transfer_1.json|*",
+      output: "./data/output/pdf/transfer_1.json"
     }
   })) return 1;
 }

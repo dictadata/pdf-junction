@@ -13,7 +13,7 @@ const pdfjsLib = require("../../lib/pdfjs-dist/build/pdf.js");
 // Loading file from file system into typed array
 // const pdfPath = "./helloworld.pdf"
 //const pdfPath = process.argv[ 2 ] || "/var/data/us/census.gov/reference/ClassCodes.pdf";
-const pdfPath = process.argv[ 2 ] || "./test/data/input/pdf/Nat_State_Topic_File_formats.pdf";
+const pdfPath = process.argv[ 2 ] || "./data/input/pdf/Nat_State_Topic_File_formats.pdf";
 
 const fs = require("fs");
 
@@ -51,7 +51,7 @@ async function getContent() {
       console.log();
 
       let content = await page.getTextContent({ includeMarkedContent: true });
-      fs.writeFileSync("./test/data/output/pdf.js/content_items_" + pageNum + ".json", JSON.stringify(content.items, null, 2));
+      fs.writeFileSync("./data/output/pdf.js/content_items_" + pageNum + ".json", JSON.stringify(content.items, null, 2));
 
       // Content contains lots of information about the text layout and
       // styles, but we need only strings at the moment

@@ -5,7 +5,7 @@
 
 require("../register");
 const { logger } = require('@dictadata/storage-junctions/utils');
-const { list } = require('@dictadata/storage-junctions').tests;
+const { list } = require('@dictadata/storage-junctions/test');
 
 logger.info("=== tests: pdf list");
 
@@ -20,7 +20,7 @@ async function tests() {
       }
     },
     terminal: {
-      output: "./test/data/output/pdf/list.json"
+      output: "./data/output/pdf/list.json"
     }
   })) return 1;
 
