@@ -26,16 +26,6 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "pdf list",
-      "program": "${workspaceFolder}/test/pdf/list.js",
-      "outputCapture": "std",
-      "env": {
-        "LOG_LEVEL": "verbose"
-      }
-    },
-    {
-      "type": "pwa-node",
-      "request": "launch",
       "name": "pdf retrieve",
       "program": "${workspaceFolder}/test/pdf/retrieve.js",
       "outputCapture": "std",

@@ -18,7 +18,7 @@ async function tests() {
       pattern: {}
     },
     terminal: {
-      output: "./test/data/output/pdf/retrieve_01.json"
+      output: "./data/output/pdf/retrieve_1.json"
     }
   })) return 1;
 
