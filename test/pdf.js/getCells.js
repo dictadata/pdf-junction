@@ -1,11 +1,11 @@
 /* Any copyright is dedicated to the Public Domain.
  * http://creativecommons.org/publicdomain/zero/1.0/ */
 
-// builds upon getContent.js
+// Builds upon getContent.js
 //
-// Advanced example that get context items and groups the
-// text into cells.
-// Groups cells into rows by comparing x, y coordinates of cells.
+// Advanced example that gets content items with marked content
+// and groups the text into cells by comparing x, y coordinates of items.
+//
 // Output is an array of arrays.
 //
 
@@ -29,10 +29,10 @@ class Cell {
     // cell lower-left
     this.x = width;
     this.y = height;
-    this.maxX = 0;
-    this.maxY = 0;
+    // cell upper-right
+    this.maxX = 0;  // max(x + width, ...)
+    this.maxY = 0;  // baseline of top most string
     // stats
-    this.c_ltr = 0;
     this.c_str = 0;
   }
 }
@@ -88,8 +88,8 @@ async function loadPage(pageNum) {
   let paragraph = false;
   let span = false;
   let prevStr;
-  let cellEndPunc = [ " ", "/", "-" ];
-  let itemBeginPunc = [ " ", "/", "-", ",", "." ];
+
+  let newlines = false; // include newlines in cells
 
   for (let item of content.items) {
     if (item.type === "beginMarkedContent") {
@@ -115,11 +115,10 @@ async function loadPage(pageNum) {
           span = true;  // span inside paragraph
           break;
         default:
-        //console.log(item.type + " " + item.tag + " " + item.id);
       }
     }
     else if (item.type === "endMarkedContent") {
-      console.log(item.type + " " + cell.c_ltr + " " + cell.c_str);
+      console.log(item.type + " " + cell.c_str);
     }
     else if (item.type) {
       // unknown type
@@ -130,18 +129,20 @@ async function loadPage(pageNum) {
       if (item.dir !== 'ltr')  // expect direction left-to-right
         console.log(item.dir);
 
-      if (item.width > 0) {
-        let x = item.transform[ 4 ];
-        let y = item.transform[ 5 ];
-        let w = item.width;
-        let h = item.height;
+      let x = item.transform[ 4 ];
+      let y = item.transform[ 5 ];
+      let w = item.width;
+      let h = item.height;
+      console.log(Math.round(x * 100) / 100 + ", " + Math.round(y * 100) / 100 + " " + Math.round(w * 100) / 100
+        + " " + paragraph + " " + item.hasEOL + " '" + item.str + "'");
 
+      {
         // determine if cell should be added to row
         // when new paragraph or span isn't adjacent to previous text
         if (paragraph || (span && !adjacent(x, y, prevStr, cell))) {
           if (cell.text) {
-            console.log(cell.text);
-            row.push(cell.text);
+            let text = cell.text.trimStart();
+            row.push(text);
             prevCell = cell;
           }
           cell = new Cell(width, height);
@@ -164,32 +165,23 @@ async function loadPage(pageNum) {
         if (y > cell.maxY) cell.maxY = y;
 
         // append text to cell
-        console.log(item.str);
-        if (cell.text
-          && !cellEndPunc.includes(cell.text[ cell.text.length - 1 ])
-          && !itemBeginPunc.includes(item.str[ 0 ])) {
-          cell.text += " ";
-        }
-        if (cell.text || item.str != ' ')
-          cell.text += item.str;
+        cell.text += item.str;
         if (item.hasEOL)
-          cell.text += "\r\n";
+          cell.text += newlines ? "\n" : " ";
 
-        if (item.str !== ' ')
-          prevStr = item;
         paragraph = false;
         cell.c_str++;
+        if (w && item.str !== ' ')
+          prevStr = item;
       }
-
-      cell.c_ltr++;
     }
 
   }
 
   // process last cell
   if (cell.text) {
-    console.log(cell.text);
-    row.push(cell.text);
+    let text = cell.text.trimStart();
+    row.push(text);
   }
   if (row.length > 0) {
     rows.push(row);
@@ -224,9 +216,9 @@ function adjacent(x, y, prevStr, cell) {
 (async () => {
   // Loading file from file system into typed array
   pdfPath = "./data/input/pdf/helloworld.pdf";
-  //await getContent();
+  await getContent();
   pdfPath = process.argv[ 2 ] || "./data/input/pdf/ClassCodes.pdf";
-  //await getContent();
+  await getContent();
   pdfPath = process.argv[ 2 ] || "./data/input/pdf/Nat_State_Topic_File_formats.pdf";
   await getContent();
 })();

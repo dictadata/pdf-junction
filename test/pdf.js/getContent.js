@@ -1,12 +1,10 @@
 /* Any copyright is dedicated to the Public Domain.
  * http://creativecommons.org/publicdomain/zero/1.0/ */
 
-// source copied from PDF.js examples/node/getInfo.js.
-
+// Based on source from PDF.js examples/node/getInfo.js.
 //
-// Basic node example that prints document metadata and text content.
-// Requires single file built version of PDF.js -- please run
-// `gulp singlefile` before running the example.
+// Basic example that outputs document metadata and content items
+// including marked content to a output file in .txt or .json format.
 //
 
 const pdfjsLib = require("../../lib/pdfjs-dist/build/pdf.js");
@@ -17,6 +15,7 @@ const path = require("path");
 
 var pdfPath;
 var doc;
+var outputJSON = false;
 
 async function getContent() {
   try {
@@ -55,27 +54,58 @@ async function getContent() {
 }
 
 async function loadPage(pageNum) {
+  let output = "";
+
   let page = await doc.getPage(pageNum);
-  console.log("# Page " + pageNum);
+  console.log("Page " + pageNum);
+  output += "Page " + pageNum + "\n";
 
   const viewport = page.getViewport({ scale: 1.0 });
   console.log("Size: " + viewport.width + "x" + viewport.height);
+  output += "Size: " + viewport.width + "x" + viewport.height + "\n";
 
   let content = await page.getTextContent({ includeMarkedContent: true });
-  /*
-  // Content contains lots of information about the text layout and
-  // styles, but we need only strings at the moment
-  const strings = content.items.map(function (item) {
-    return item.str ? item.str : '';
-  });
-  console.log("## Text Content");
-  console.log(strings.join(" "));
-  */
 
-  let output = "./data/output/pdf.js/" + path.parse(pdfPath).name + "_content" + pageNum + ".json";
-  console.log("output: " + output);
-  fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, JSON.stringify(content.items, null, 2));
+  if (outputJSON) {
+    output = JSON.stringify(content.items, null, 2);
+  }
+  else {
+    for (let item of content.items) {
+      if (item.type === "beginMarkedContent") {
+        output += item.type + " " + item.tag + "\n";
+      }
+      else if (item.type === "beginMarkedContentProps") {
+        output += item.type + " " + item.tag + " " + item.id + "\n";
+      }
+      else if (item.type === "endMarkedContent") {
+        output += item.type + "\n";
+      }
+      else if (item.type) {
+        // unknown type
+        output += item.type + " " + item.tag + " " + item.id + "\n";
+      }
+      else {
+        // a string item
+        if (item.dir !== 'ltr')  // expect direction left-to-right
+          output += item.dir + "\n";
+
+        let x = item.transform[ 4 ];
+        let y = item.transform[ 5 ];
+        let w = item.width;
+        let h = item.height;
+
+        output += Math.round(x * 100) / 100 + "," + Math.round(y * 100) / 100 + " "
+          + Math.round(w * 100) / 100 + "," + Math.round(h * 100) / 100 + " "
+          + item.hasEOL + " '" + item.str + "'" + "\n";
+      }
+    }
+  }
+
+  let outputFile = "./data/output/pdf.js/" + path.parse(pdfPath).name + "_content" + pageNum;
+  outputFile += outputJSON ? ".json" : ".txt";
+  console.log("output: " + outputFile);
+  fs.mkdirSync(path.dirname(outputFile), { recursive: true });
+  fs.writeFileSync(outputFile, output);
 
   // Release page resources.
   page.cleanup();
@@ -86,8 +116,8 @@ async function loadPage(pageNum) {
 (async () => {
   // Loading file from file system into typed array
   // pdfPath = "./helloworld.pdf";
-  // pdfPath = process.argv[ 2 ] || "./data/input/pdf/ClassCodes.pdf";
-  pdfPath = process.argv[ 2 ] || "./data/input/pdf/Nat_State_Topic_File_formats.pdf";
+  pdfPath = process.argv[ 2 ] || "./data/input/pdf/ClassCodes.pdf";
+  //pdfPath = process.argv[ 2 ] || "./data/input/pdf/Nat_State_Topic_File_formats.pdf";
 
   await getContent();
 })();
