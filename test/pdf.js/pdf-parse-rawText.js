@@ -92,7 +92,6 @@ async function PDF(dataBuffer, options) {
       .then((pageData) => options.pagerender(pageData))
       .catch((err) => {
         // todo log err using debug
-        debugger;
         return "";
       });
 

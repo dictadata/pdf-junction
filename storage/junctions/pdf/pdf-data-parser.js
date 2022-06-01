@@ -59,10 +59,7 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
       let page = await this.doc.getPage(pageNum);
       logger.debug("# Page " + pageNum);
 
-      const { width, height
-      } = page.getViewport({
-        scale: 1.0
-      });
+      const { width, height } = page.getViewport({ scale: 1.0 });
       logger.debug("Size: " + width + "x" + height);
 
       let content = await page.getTextContent({
@@ -85,17 +82,29 @@ module.exports = exports = class PdfDataParser extends EventEmitter {
       };
 
       for (let item of content.items) {
-        if (item.type === "beginMarkedContentProps") {
-          cell = {
-            text: "",
-            // cell lower-left
-            x: width,
-            y: height
-          };
+        if (item.type === "beginMarkedContent") {
+          console.log(item.type + " " + item.tag);
+        }
+        else if (item.type === "beginMarkedContentProps") {
+          if (item.tag === 'P') {
+            cell = {
+              text: "",
+              // cell lower-left
+              x: width,
+              y: height
+            };
+          }
+          else {
+            console.log(item.type + " " + item.tag);
+          }
         }
         else if (item.type === "endMarkedContent") {
           row.push(cell.text);
           prevCell = cell;
+        }
+        else if (item.type) {
+          // do nothing
+          console.log(item.type + " " + item.tag);
         }
         else {
           let x = item.transform[ 4 ];

@@ -4,10 +4,11 @@
  * Example of using pdf-parse.js
  */
 
+const parser = require('./pdf-parse-rawText.js');
 const fs = require('fs');
-const parser = require('./pdf-parse.js');
+const path = require('path');
 
-var dataBuffer = fs.readFileSync('/var/data/us/census.gov/reference/ClassCodes.pdf');
+var dataBuffer = fs.readFileSync('./data/input/pdf/ClassCodes.pdf');
 
 parser(dataBuffer).then(function (data) {
 
@@ -24,5 +25,8 @@ parser(dataBuffer).then(function (data) {
   console.log(data.version);
 
   // PDF text
-  fs.writeFileSync("pdf.txt", data.text);
+  let output = "./data/output/pdf.js/pdf.txt";
+  console.log("output: " + output);
+  fs.mkdirSync(path.dirname(output), { recursive: true });
+  fs.writeFileSync(output, data.text);
 });
