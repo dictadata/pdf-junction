@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@dictadata/storage-junctions": "^2.3.1",
-    "pdf-data-parser": "^0.9.0"
+    "pdf-data-parser": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "^8.16.0"
