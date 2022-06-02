@@ -4,22 +4,22 @@
   "data": [
     {
       "Class Code": "A1",
-      "Class Code Description": "Airport with scheduled commercial flightsthat also serves as a military installation",
+      "Class Code Description": "Airport with scheduled commercial flights that also serves as a military installation",
       "Associated Geographic Entity": "Locality Point, Military Installation"
     },
     {
       "Class Code": "A3",
-      "Class Code Description": "Airport with scheduled commercial flightsthat does not serve as a militaryinstallation",
+      "Class Code Description": "Airport with scheduled commercial flights that does not serve as a military installation",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "A4",
-      "Class Code Description": "Airport without scheduled commercialflights that does not serve as a militaryinstallation",
+      "Class Code Description": "Airport without scheduled commercial flights that does not serve as a military installation",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "A6",
-      "Class Code Description": "Airport without scheduled commercialflights that serves as a military installation",
+      "Class Code Description": "Airport without scheduled commercial flights that serves as a military installation",
       "Associated Geographic Entity": "Locality Point, Military Installation"
     },
     {
@@ -39,13 +39,13 @@
     },
     {
       "Class Code": "C1",
-      "Class Code Description": "An active incorporated place that doesnot serve as a county subdivisionequivalent",
-      "Associated Geographic Entity": "Economic Census Place, IncorporatedPlace"
+      "Class Code Description": "An active incorporated place that does not serve as a county subdivision equivalent",
+      "Associated Geographic Entity": "Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "C2",
-      "Class Code Description": "An active incorporated place that islegally coextensive with an countysubdivision but treated as independent ofany county subdivision",
-      "Associated Geographic Entity": "County Subdivision, Economic CensusPlace, Incorporated Place"
+      "Class Code Description": "An active incorporated place that is legally coextensive with an county subdivision but treated as independent of any county subdivision",
+      "Associated Geographic Entity": "County Subdivision, Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "C3",
@@ -54,63 +54,68 @@
     },
     {
       "Class Code": "C4",
-      "Class Code Description": "Alternate official common name for anincorporated place",
+      "Class Code Description": "Alternate official common name for an incorporated place",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "C5",
-      "Class Code Description": "An active incorporated place that isindependent of any county subdivisionand serves as a county subdivisionequivalent",
-      "Associated Geographic Entity": "County Subdivision, Economic CensusPlace, Incorporated Place"
+      "Class Code Description": "An active incorporated place that is independent of any county subdivision and serves as a county subdivision equivalent",
+      "Associated Geographic Entity": "County Subdivision, Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "C6",
-      "Class Code Description": "An active incorporated place that partiallyis independent of any county subdivisionand serves as a county subdivisionequivalent or partially coextensive with acounty subdivision but treated asindependent of any county subdivision",
+      "Class Code Description": "An active incorporated place that partially is independent of any county subdivision and serves as a county subdivision equivalent or partially coextensive with a county subdivision but treated as independent of any county subdivision",
       "Associated Geographic Entity": "Incorporated Place"
     },
     {
       "Class Code": "C7",
-      "Class Code Description": "An incorporated place that is independentof any county",
-      "Associated Geographic Entity": "County or Equivalent Feature, CountySubdivision, Economic Census Place,Incorporated Place"
+      "Class Code Description": "An incorporated place that is independent of any county",
+      "Associated Geographic Entity": "County or Equivalent Feature, County Subdivision, Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "C8",
-      "Class Code Description": "The balance of a consolidated cityexcluding the separately incorporatedplace(s) within that consolidatedgovernment",
-      "Associated Geographic Entity": "Economic Census Place, IncorporatedPlace"
+      "Class Code Description": "The balance of a consolidated city excluding the separately incorporated place(s) within that consolidated government",
+      "Associated Geographic Entity": "Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "C9",
-      "Class Code Description": "An inactive or nonfunctioningincorporated place",
-      "Associated Geographic Entity": "Economic Census Place, IncorporatedPlace"
+      "Class Code Description": "An inactive or nonfunctioning incorporated place",
+      "Associated Geographic Entity": "Economic Census Place, Incorporated Place"
     },
     {
       "Class Code": "D0",
-      "Class Code Description": "Statistical or legal area administeredand/or claimed by two or more AmericanIndian tribes",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Statistical or legal area administered and/or claimed by two or more American Indian tribes",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
+    },
+    {
+      "Class Code": "D1",
+      "Class Code Description": "Legal federally recognized American Indian area consisting of reservation and associated off-reservation trust land",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D2",
-      "Class Code Description": "Legal federally recognized AmericanIndian area consisting of reservation only",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Legal federally recognized American Indian area consisting of reservation only",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D3",
-      "Class Code Description": "Legal federally recognized AmericanIndian area consisting of off-reservationtrust land only",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Legal federally recognized American Indian area consisting of off-reservation trust land only",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D4",
-      "Class Code Description": "Legal state recognized American Indianarea",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Legal state recognized American Indian area",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D5",
-      "Class Code Description": "The legal off-reservation trust landportion of an American Indian entity withboth a reservation and trust land",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "The legal off-reservation trust land portion of an American Indian entity with both a reservation and trust land",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D6",
-      "Class Code Description": "Statistical American Indian area definedfor a federally recognized tribe that doesnot have a reservation or off-reservationtrust land specifically a tribal designatedstatistical area or Oklahoma tribalstatistical area, but excluding AlaskaNative village statistical areas",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Statistical American Indian area defined for a federally recognized tribe that does not have a reservation or off-reservation trust land specifically a tribal designated statistical area or Oklahoma tribal statistical area, but excluding Alaska Native village statistical areas",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D7",
@@ -119,18 +124,18 @@
     },
     {
       "Class Code": "D8",
-      "Class Code Description": "The legal reservation portion of anAmerican Indian entity with both areservation and trust land",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "The legal reservation portion of an American Indian entity with both a reservation and trust land",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "D9",
-      "Class Code Description": "Statistical American Indian area definedfor a state-recognized tribe that does nothave a reservation or off-reservation trustland, specifically a state-designated tribalstatistical area",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Statistical American Indian area defined for a state-recognized tribe that does not have a reservation or off-reservation trust land, specifically a state-designated tribal statistical area",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "E1",
-      "Class Code Description": "Statistical area that represents thedensely settled portion of an AlaskaNative village; an Alaska Native villagestatistical area",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Statistical area that represents the densely settled portion of an Alaska Native village; an Alaska Native village statistical area",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "E7",
@@ -139,8 +144,8 @@
     },
     {
       "Class Code": "F1",
-      "Class Code Description": "Legal Hawaiian home land consisting oflands held in trust for the benefit of NativeHawaiians",
-      "Associated Geographic Entity": "American Indian/Alaska Native/NativeHawaiian Area"
+      "Class Code Description": "Legal Hawaiian home land consisting of lands held in trust for the benefit of Native Hawaiians",
+      "Associated Geographic Entity": "American Indian/Alaska Native/Native Hawaiian Area"
     },
     {
       "Class Code": "H1",
@@ -149,12 +154,12 @@
     },
     {
       "Class Code": "H2",
-      "Class Code Description": "The balance of an active county orequivalent feature excluding theincorporated place(s) that separatelyqualify as EC places",
+      "Class Code Description": "The balance of an active county or equivalent feature excluding the incorporated place(s) that separately qualify as EC places",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
       "Class Code": "H3",
-      "Class Code Description": "The balance of an inactive county orequivalent feature excluding theincorporated place(s) that separatelyqualify as EC places",
+      "Class Code Description": "The balance of an inactive county or equivalent feature excluding the incorporated place(s) that separately qualify as EC places",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
@@ -168,29 +173,34 @@
       "Associated Geographic Entity": "County or Equivalent Feature"
     },
     {
+      "Class Code": "H6",
+      "Class Code Description": "A county that is coextensive with an incorporated place, part of an incorporated place, or a consolidated city and the governmental functions of the county are part of the municipal govenment",
+      "Associated Geographic Entity": "County or Equivalent Feature"
+    },
+    {
       "Class Code": "H7",
-      "Class Code Description": "The balance of a statistical countyequivalent feature excluding theincorporated place(s) that separatelyqualify as EC places",
+      "Class Code Description": "The balance of a statistical county equivalent feature excluding the incorporated place(s) that separately qualify as EC places",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
       "Class Code": "I1",
-      "Class Code Description": "An EC Place that is a whole HawaiianIsland",
+      "Class Code Description": "An EC Place that is a whole Hawaiian Island",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
       "Class Code": "I2",
-      "Class Code Description": "An EC Place that is a balance of aHawaiian Island",
+      "Class Code Description": "An EC Place that is a balance of a Hawaiian Island",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
       "Class Code": "M1",
-      "Class Code Description": "A military or other defense installationthat is not entirely within a censusdesignated place",
+      "Class Code Description": "A military or other defense installation that is not entirely within a census designated place",
       "Associated Geographic Entity": "Locality Point, Military Installation"
     },
     {
       "Class Code": "M2",
-      "Class Code Description": "A military or other defense installationentirely within a place",
-      "Associated Geographic Entity": "Census Designated Place, EconomicCensus Place, Military Installation"
+      "Class Code Description": "A military or other defense installation entirely within a place",
+      "Associated Geographic Entity": "Census Designated Place, Economic Census Place, Military Installation"
     },
     {
       "Class Code": "M3",
@@ -199,7 +209,7 @@
     },
     {
       "Class Code": "M4",
-      "Class Code Description": "Federally managed park, forest, or otherarea",
+      "Class Code Description": "Federally managed park, forest, or other area",
       "Associated Geographic Entity": "Locality Point, Park"
     },
     {
@@ -214,47 +224,47 @@
     },
     {
       "Class Code": "N9",
-      "Class Code Description": "International, state, tribal, or localgovernment facility",
+      "Class Code Description": "International, state, tribal, or local government facility",
       "Associated Geographic Entity": "Locality Point, Military Installation"
     },
     {
       "Class Code": "R0",
-      "Class Code Description": "Park, forest, or other reserve not federallymanaged or unknown",
+      "Class Code Description": "Park, forest, or other reserve not federally managed or unknown",
       "Associated Geographic Entity": "Park"
     },
     {
       "Class Code": "S1",
-      "Class Code Description": "A nonfunctioning county subdivision thatis coextensive with a census designatedplace",
+      "Class Code Description": "A nonfunctioning county subdivision that is coextensive with a census designated place",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "S2",
-      "Class Code Description": "A statistical county subdivision that iscoextensive with a census designatedplace",
+      "Class Code Description": "A statistical county subdivision that is coextensive with a census designated place",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "S3",
-      "Class Code Description": "A statistical county subdivision that iscoextensive with a legal American Indian,Alaska Native, or Native Hawaiian area",
+      "Class Code Description": "A statistical county subdivision that is coextensive with a legal American Indian, Alaska Native, or Native Hawaiian area",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "T1",
-      "Class Code Description": "An active county subdivision that is notcoextensive with an incorporated place",
-      "Associated Geographic Entity": "County Subdivision, Economic CensusPlace"
+      "Class Code Description": "An active county subdivision that is not coextensive with an incorporated place",
+      "Associated Geographic Entity": "County Subdivision, Economic Census Place"
     },
     {
       "Class Code": "T2",
-      "Class Code Description": "An active county subdivision that iscoextensive with a census designatedplace",
+      "Class Code Description": "An active county subdivision that is coextensive with a census designated place",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "T5",
-      "Class Code Description": "An active county subdivision that iscoextensive with an incorporated place",
+      "Class Code Description": "An active county subdivision that is coextensive with an incorporated place",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "T8",
-      "Class Code Description": "The balance of a county subdivisionexcluding the incorporated place(s) thatseparately qualify as EC places",
+      "Class Code Description": "The balance of a county subdivision excluding the incorporated place(s) that separately qualify as EC places",
       "Associated Geographic Entity": "Economic Census Place"
     },
     {
@@ -264,52 +274,57 @@
     },
     {
       "Class Code": "U1",
-      "Class Code Description": "A census designated place with anofficial federally recognized name",
-      "Associated Geographic Entity": "Census Designated Place, EconomicCensus Place"
+      "Class Code Description": "A census designated place with an official federally recognized name",
+      "Associated Geographic Entity": "Census Designated Place, Economic Census Place"
     },
     {
       "Class Code": "U2",
-      "Class Code Description": "A census designated place without anofficial federally recognized name",
-      "Associated Geographic Entity": "Census Designated Place, EconomicCensus Place"
+      "Class Code Description": "A census designated place without an official federally recognized name",
+      "Associated Geographic Entity": "Census Designated Place, Economic Census Place"
+    },
+    {
+      "Class Code": "U3",
+      "Class Code Description": "Alternate official common name for a census designated place",
+      "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "U4",
-      "Class Code Description": "Alternate official common name for apopulated location within an incorporatedplace",
+      "Class Code Description": "Alternate official common name for a populated location within an incorporated place",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "U5",
-      "Class Code Description": "A census designated place that iscoextensive with a county subdivision",
+      "Class Code Description": "A census designated place that is coextensive with a county subdivision",
       "Associated Geographic Entity": "Census Designated Place"
     },
     {
       "Class Code": "U6",
-      "Class Code Description": "A populated place that is not a censusdesignated or incorporated place havingan official federally recognized name",
+      "Class Code Description": "A populated place that is not a census designated or incorporated place having an official federally recognized name",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "U8",
-      "Class Code Description": "A populated place that is not a censusdesignated or incorporated place thatdoes not have an official federallyrecognized name",
+      "Class Code Description": "A populated place that is not a census designated or incorporated place that does not have an official federally recognized name",
       "Associated Geographic Entity": "Locality Point"
     },
     {
       "Class Code": "Z1",
       "Class Code Description": "A nonfunctioning county subdivision",
-      "Associated Geographic Entity": "County Subdivision, Economic CensusPlace"
+      "Associated Geographic Entity": "County Subdivision, Economic Census Place"
     },
     {
       "Class Code": "Z2",
-      "Class Code Description": "A county subdivision that is coextensivewith an American Indian, Alaska Native,or Native Hawaiian area and legally isindependent of any other countysubdivision",
+      "Class Code Description": "A county subdivision that is coextensive with an American Indian, Alaska Native, or Native Hawaiian area and legally is independent of any other county subdivision",
       "Associated Geographic Entity": "County Subdivision"
     },
     {
       "Class Code": "Z3",
-      "Class Code Description": "A county subdivision defined as anunorganized territory",
-      "Associated Geographic Entity": "County Subdivision, Economic CensusPlace"
+      "Class Code Description": "A county subdivision defined as an unorganized territory",
+      "Associated Geographic Entity": "County Subdivision, Economic Census Place"
     },
     {
       "Class Code": "Z4",
-      "Class Code Description": "A nonfunctioning or disorganizedhistorical county subdivision no longerrecognized by the Census Bureau",
+      "Class Code Description": "A nonfunctioning or disorganized historical county subdivision no longer recognized by the Census Bureau",
       "Associated Geographic Entity": "Locality Point"
     },
     {
@@ -324,13 +339,18 @@
     },
     {
       "Class Code": "Z7",
-      "Class Code Description": "A county subdivision that is coextensivewith a county or equivalent feature or allor part of an incorporated place that theCensus Bureau recognizes separately",
+      "Class Code Description": "A county subdivision that is coextensive with a county or equivalent feature or all or part of an incorporated place that the Census Bureau recognizes separately",
       "Associated Geographic Entity": "County Subdivision, Locality Point"
     },
     {
       "Class Code": "Z8",
-      "Class Code Description": "A county subdivision that is legallycoextensive with all or part of anincorporated place that the CensusBureau does not recognize",
+      "Class Code Description": "A county subdivision that is legally coextensive with all or part of an incorporated place that the Census Bureau does not recognize",
       "Associated Geographic Entity": "Locality Point"
+    },
+    {
+      "Class Code": "Z9",
+      "Class Code Description": "County subdivision not defined",
+      "Associated Geographic Entity": "County Subdivision"
     }
   ]
 }

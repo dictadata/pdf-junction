@@ -1,0 +1,17 @@
+{
+  "name": "*",
+  "type": "engram",
+  "smt": {
+    "model": "any",
+    "locus": "*",
+    "schema": "*",
+    "key": "*"
+  },
+  "fields": [
+    {
+      "name": "Greating",
+      "type": "text",
+      "size": 13
+    }
+  ]
+}

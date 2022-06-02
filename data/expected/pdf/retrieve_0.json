@@ -1,0 +1,9 @@
+{
+  "resultCode": 0,
+  "resultText": "OK",
+  "data": [
+    {
+      "Greating": "Hello, world!"
+    }
+  ]
+}

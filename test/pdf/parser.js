@@ -4,17 +4,14 @@
  */
 "use strict";
 
-const pdfDataParser = require("../../storage/junctions/pdf/pdf-data-parser");
+const { PdfDataParser } = require("pdf-data-parser");
 const fs = require("fs");
 const path = require("path");
 
-async function test(input) {
-  console.log(">>> input: " + input);
+async function test(options) {
+  console.log(">>> input: " + options.url);
 
-  const options = {
-    url: input
-  };
-  let parser = new pdfDataParser(options);
+  let parser = new PdfDataParser(options);
   let rows = [];
 
   parser.on('data', (data) => {
@@ -22,7 +19,7 @@ async function test(input) {
   });
 
   parser.on('end', () => {
-    let output = input.replace("/input/", "/output/").replace(".pdf", ".json");
+    let output = options.url.replace("/input/", "/output/").replace(".pdf", ".json");
     console.log(">>> output: " + output);
     fs.mkdirSync(path.dirname(output), { recursive: true });
     fs.writeFileSync(output, JSON.stringify(rows, null, 2));
@@ -32,10 +29,10 @@ async function test(input) {
     console.error(err);
   });
 
-  await parser.parsePDF();
+  await parser.parse();
 }
 
 (async () => {
-  if (await test("./data/input/pdf/ClassCodes.pdf")) return;
-  //if (await test("./data/input/pdf/Nat_State_Topic_File_formats.pdf")) return;
+  if (await test({ url: "./data/input/pdf/ClassCodes.pdf" })) return;
+  if (await test({ url: "./data/input/pdf/Nat_State_Topic_File_formats.pdf", heading: "Government Units File Format", columns: 3 })) return;
 })();

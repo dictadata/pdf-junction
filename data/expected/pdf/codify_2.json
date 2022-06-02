@@ -9,19 +9,23 @@
   },
   "fields": [
     {
-      "name": "Class Code",
+      "name": "Name",
+      "type": "text",
+      "size": 14
+    },
+    {
+      "name": "Type",
       "type": "keyword",
-      "size": 2
+      "size": 9
     },
     {
-      "name": "Class Code Description",
-      "type": "text",
-      "size": 277
+      "name": "Length/ Decimals",
+      "type": "integer"
     },
     {
-      "name": "Associated Geographic Entity",
+      "name": "Description",
       "type": "text",
-      "size": 91
+      "size": 470
     }
   ]
 }

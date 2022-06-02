@@ -5,7 +5,7 @@
 
 const { StorageReader } = require('@dictadata/storage-junctions');
 const { logger } = require('@dictadata/storage-junctions/utils');
-const pdfDataParser = require('./pdf-data-parser');
+const { PdfDataParser } = require('pdf-data-parser');
 
 module.exports = class PdfReader extends StorageReader {
 
@@ -21,16 +21,22 @@ module.exports = class PdfReader extends StorageReader {
 
     let pdfOptions = {
       url: this.junction.smt.locus
-    }
+    };
+    if (options.heading) pdfOptions.heading = options.heading;
+    if (options.columns) pdfOptions.columns = options.columns;
+    if (options.newlines) pdfOptions.newlines = options.newlines;
+
+    this.headers = options.headers || undefined;
 
     this.started = false;
-    let parser = this.parser = new pdfDataParser(pdfOptions);
+    let parser = this.parser = new PdfDataParser(pdfOptions);
     var reader = this;
 
     // eslint-disable-next-line arrow-parens
     parser.on('data', (data) => {
       if (data) {
-        let construct = encoder.cast(data);
+        let construct = this.rowAsObject(data);
+        construct = encoder.cast(construct);
         construct = encoder.filter(construct);
         construct = encoder.select(construct);
         //logger.debug(JSON.stringify(construct));
@@ -54,6 +60,20 @@ module.exports = class PdfReader extends StorageReader {
 
   }
 
+  rowAsObject(row) {
+    if (!this.headers) {
+      this.headers = row;
+    }
+    else {
+      let obj = {};
+      for (let i = 0; i < row.length; i++) {
+        let prop = (i < this.headers.length) ? this.headers[ i ] : i;
+        obj[ prop ] = row[ i ];
+      }
+      this.push(obj);
+    }
+  }
+
   /**
    * Fetch data from the underlying resource.
    * @param {*} size <number> Number of bytes to read asynchronously
@@ -65,7 +85,7 @@ module.exports = class PdfReader extends StorageReader {
     try {
       if (!this.started) {
         this.started = true;
-        this.parser.parsePDF();
+        this.parser.parse();
       }
     }
     catch (err) {
