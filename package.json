@@ -1,6 +1,6 @@
 {
   "name": "@dictadata/pdf-junction",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Storage junction for PDF tabular data.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@dictadata/storage-junctions": "^2.3.1",
-    "pdf-data-parser": "^1.0.3"
+    "pdf-data-parser": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^8.16.0"
