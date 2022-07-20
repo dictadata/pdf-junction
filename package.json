@@ -1,6 +1,6 @@
 {
   "name": "@dictadata/pdf-junction",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Storage junction for PDF tabular data.",
   "main": "index.js",
   "scripts": {
