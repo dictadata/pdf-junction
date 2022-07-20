@@ -25,6 +25,11 @@ module.exports = class PdfReader extends StorageReader {
     if (options.heading) pdfOptions.heading = options.heading;
     if (options.columns) pdfOptions.columns = options.columns;
     if (options.newlines) pdfOptions.newlines = options.newlines;
+    if (options.artifacts) pdfOptions.artifacts = options.artifacts;
+    if (options.pageHeader) pdfOptions.pageHeader = options.pageHeader;
+    if (options.pageFooter) pdfOptions.pageFooter = options.pageFooter;
+    if (options.repeatingHeaders) pdfOptions.repeatingHeaders = options.repeatingHeaders;
+    if (options.lineHeight) pdfOptions.lineHeight = options.lineHeight;
 
     this.headers = options.headers || undefined;
 
