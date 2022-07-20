@@ -23,7 +23,7 @@ module.exports = class PdfReader extends StorageReader {
       url: this.junction.smt.locus
     };
     if (options.heading) pdfOptions.heading = options.heading;
-    if (options.columns) pdfOptions.columns = options.columns;
+    if (options.cells) pdfOptions.cells = options.cells;
     if (options.newlines) pdfOptions.newlines = options.newlines;
     if (options.artifacts) pdfOptions.artifacts = options.artifacts;
     if (options.pageHeader) pdfOptions.pageHeader = options.pageHeader;
@@ -68,6 +68,7 @@ module.exports = class PdfReader extends StorageReader {
   rowAsObject(row) {
     if (!this.headers) {
       this.headers = row;
+      return null;
     }
     else {
       let obj = {};
@@ -75,7 +76,7 @@ module.exports = class PdfReader extends StorageReader {
         let prop = (i < this.headers.length) ? this.headers[ i ] : i;
         obj[ prop ] = row[ i ];
       }
-      this.push(obj);
+      return obj;
     }
   }
 
