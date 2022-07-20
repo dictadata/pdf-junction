@@ -42,7 +42,7 @@ async function tests() {
       smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf|*|*",
       options: {
         heading: "Government Units File Format",
-        columns: 3
+        cells: 3
       },
       pattern: {}
     },
