@@ -32,8 +32,8 @@ module.exports = class PdfJunction extends StorageJunction {
 
   /**
    *
-   * @param {*} SMT 'pdf|connection string|schema name|key' or an Engram object
-   * @param {*} options
+   * @param {string|object} SMT "pdf|url path|document filename|*", SMT or Engram object.
+   * @param {object} options passed to pdf-data-parser.
    */
   constructor(SMT, options = null) {
     super(SMT, options);

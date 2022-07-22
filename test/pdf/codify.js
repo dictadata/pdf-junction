@@ -13,7 +13,7 @@ async function tests() {
   logger.verbose("=== codify helloworld.pdf");
   if (await codify({
     origin: {
-      smt: "pdf|./data/input/pdf/helloworld.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|helloworld.pdf|*",
       options: {
         headers: [ "Greating" ]
       }
@@ -24,7 +24,7 @@ async function tests() {
   logger.verbose("=== codify ClassCodes.pdf");
   if (await codify({
     origin: {
-      smt: "pdf|./data/input/pdf/ClassCodes.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|ClassCodes.pdf|*",
       options: {}
     },
     output: "./data/output/pdf/codify_1.json"
@@ -33,7 +33,7 @@ async function tests() {
   logger.verbose("=== codify Nat_State_Topic_File_formats.pdf");
   if (await codify({
     origin: {
-      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf|*|*",
+      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf||*",
       options: {
         heading: "Government Units File Format",
         cells: 3

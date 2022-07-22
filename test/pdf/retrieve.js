@@ -14,7 +14,7 @@ async function tests() {
   logger.info("=== pdf retrieve helloworld");
   if (await retrieve({
     origin: {
-      smt: "pdf|./data/input/pdf/helloworld.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|helloworld.pdf|*",
       options: {
         headers: [ "Greating" ]
       },
@@ -28,7 +28,7 @@ async function tests() {
   logger.info("=== pdf retrieve ClassCodes");
   if (await retrieve({
     origin: {
-      smt: "pdf|./data/input/pdf/ClassCodes.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|ClassCodes.pdf|*",
       pattern: {}
     },
     terminal: {
@@ -39,7 +39,7 @@ async function tests() {
   logger.info("=== pdf retrieve Nat_State_Topic_File_formats");
   if (await retrieve({
     origin: {
-      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf|*|*",
+      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf||*",
       options: {
         heading: "Government Units File Format",
         cells: 3

@@ -17,10 +17,8 @@ module.exports = class PdfReader extends StorageReader {
   constructor(storageJunction, options = null) {
     super(storageJunction, options);
 
-    var encoder = this.junction.createEncoder(options);
-
     let pdfOptions = {
-      url: this.junction.smt.locus
+      url: this.junction.smt.locus + this.junction.smt.schema
     };
     if (options.heading) pdfOptions.heading = options.heading;
     if (options.cells) pdfOptions.cells = options.cells;
@@ -34,7 +32,9 @@ module.exports = class PdfReader extends StorageReader {
     this.headers = options.headers || undefined;
 
     this.started = false;
-    let parser = this.parser = new PdfDataParser(pdfOptions);
+
+    var parser = this.parser = new PdfDataParser(pdfOptions);
+    var encoder = this.junction.createEncoder(options);
     var reader = this;
 
     // eslint-disable-next-line arrow-parens

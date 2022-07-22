@@ -14,7 +14,7 @@ async function tests() {
   logger.info("=== list pdf sheets (forEach)");
   if (await list({
     origin: {
-      smt: "pdf|connection string|*|*",
+      smt: "pdf|path|document.pdf|*",
       options: {
         schema: "foo*"
       }

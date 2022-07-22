@@ -13,7 +13,7 @@ async function tests() {
   logger.info("=== pdf transfer helloworld");
   if (await transfer({
     origin: {
-      smt: "pdf|./data/input/pdf/helloworld.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|helloworld.pdf|*",
       options: {
         headers: [ "Greating" ]
       }
@@ -27,7 +27,7 @@ async function tests() {
   logger.info("=== pdf transfer ClassCodes");
   if (await transfer({
     origin: {
-      smt: "pdf|./data/input/pdf/ClassCodes.pdf|*|*",
+      smt: "pdf|./data/input/pdf/|ClassCodes.pdf|*",
     },
     terminal: {
       smt: "json|./data/output/pdf/|transfer_1.json|*",
@@ -38,7 +38,7 @@ async function tests() {
   logger.info("=== pdf transfer Nat_State_Topic_File_formats");
   if (await transfer({
     origin: {
-      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf|*|*",
+      smt: "pdf|./data/input/pdf/Nat_State_Topic_File_formats.pdf||*",
       options: {
         heading: "Government Units File Format",
         cells: 3
