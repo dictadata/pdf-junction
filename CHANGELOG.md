@@ -1,5 +1,7 @@
 # pdf-junction 2.3.x
 
+- version 2.3.4
+  - created README.md documentation
 - version 2.3.3
   - fix issue with PdfDataParser options.cells parameter
   - fix issue with rowAsObject and encoder
