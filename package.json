@@ -24,10 +24,10 @@
     "node": ">=15.0.1"
   },
   "dependencies": {
-    "@dictadata/storage-junctions": "^2.3.1",
+    "@dictadata/storage-junctions": "^2.5.1",
     "pdf-data-parser": "^1.1.2"
   },
   "devDependencies": {
-    "eslint": "^8.20.0"
+    "eslint": "^8.25.0"
   }
 }
