@@ -51,6 +51,21 @@ async function tests() {
     }
   })) return 1;
 
+  logger.info("=== pdf retrieve CongNov22 District 2");
+  if (await retrieve({
+    origin: {
+      smt: "pdf|./data/input/pdf/CongNov22.pdf||*",
+      options: {
+        heading: "US Representative District 2",
+        cells: 10
+      },
+      pattern: {}
+    },
+    terminal: {
+      output: "./data/output/pdf/retrieve_3.json"
+    }
+  })) return 1;
+
 }
 
 (async () => {

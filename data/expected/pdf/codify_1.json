@@ -2,7 +2,7 @@
   "name": "*",
   "type": "engram",
   "smt": {
-    "model": "any",
+    "model": "*",
     "locus": "*",
     "schema": "*",
     "key": "*"

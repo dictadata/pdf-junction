@@ -49,6 +49,22 @@ async function tests() {
       output: "./data/output/pdf/transfer_2.json"
     }
   })) return 1;
+
+  logger.info("=== pdf transfer CongNov22 District 4");
+  if (await transfer({
+    origin: {
+      smt: "pdf|./data/input/pdf/CongNov22.pdf||*",
+      options: {
+        heading: "US Representative District 4",
+        cells: 8
+      }
+    },
+    terminal: {
+      smt: "json|./data/output/pdf/|transfer_3.json|*",
+      output: "./data/output/pdf/transfer_3.json"
+    }
+  })) return 1;
+
 }
 
 (async () => {

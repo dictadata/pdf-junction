@@ -41,6 +41,18 @@ async function tests() {
     },
     output: "./data/output/pdf/codify_2.json"
   })) return 1;
+
+  logger.verbose("=== codify CongNov22.pdf");
+  if (await codify({
+    origin: {
+      smt: "pdf|./data/input/pdf/CongNov22.pdf||*",
+      options: {
+        heading: "US Representative District 1",
+        cells: 10
+      }
+    },
+    output: "./data/output/pdf/codify_3.json"
+  })) return 1;
 }
 
 (async () => {

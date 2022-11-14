@@ -1,0 +1,61 @@
+{
+  "type": "engram",
+  "name": "*",
+  "smt": {
+    "model": "*",
+    "locus": "*",
+    "schema": "*",
+    "key": "*"
+  },
+  "fields": [
+    {
+      "name": "County",
+      "type": "text",
+      "size": 10
+    },
+    {
+      "name": "Democratic Active",
+      "type": "integer"
+    },
+    {
+      "name": "Republican Active",
+      "type": "integer"
+    },
+    {
+      "name": "No Party Active",
+      "type": "integer"
+    },
+    {
+      "name": "Other Active",
+      "type": "integer"
+    },
+    {
+      "name": "Total Active",
+      "type": "integer"
+    },
+    {
+      "name": "Democratic Inactive",
+      "type": "integer"
+    },
+    {
+      "name": "Republican Inactive",
+      "type": "integer"
+    },
+    {
+      "name": "No Party Inactive",
+      "type": "integer"
+    },
+    {
+      "name": "Other Inactive",
+      "type": "integer"
+    },
+    {
+      "name": "Total Inactive",
+      "type": "integer"
+    },
+    {
+      "name": "Grand Total",
+      "type": "integer"
+    }
+  ]
+}

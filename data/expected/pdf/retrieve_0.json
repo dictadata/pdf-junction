@@ -1,6 +1,6 @@
 {
   "resultCode": 0,
-  "resultText": "OK",
+  "resultMessage": "OK",
   "data": [
     {
       "Greating": "Hello, world!"
