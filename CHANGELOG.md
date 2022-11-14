@@ -1,4 +1,9 @@
-# pdf-junction 2.3.x
+# @dictadata/pdf-junction Change Log
+
+- version 0.9.5
+  - updated: @dictadata/storage-junctions@0.9.84
+  - feature: parse comma delimited numbers in cells
+  - new versioning scheme
 
 - version 2.3.4
   - created README.md documentation

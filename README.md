@@ -1,4 +1,4 @@
-# pdf-junction 2.3.x
+# pdf-junction 0.9.x
 
 Storage Junction plugin for reading tabular data in PDF documents.  Pdf-junction is a storage plugin for use with [_@dictadata/storage-junctions_](https://github.com/dictadata/storage-junctions) and related projects [_@dictadata/storage-etl_](https://github.com/dictadata/storage-etl) Command Line Interface (CLI) and [_@dictadata/storage-node_](https://github.com/dictadata/storage-node) API Server.
 
