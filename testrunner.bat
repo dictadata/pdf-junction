@@ -1,5 +1,5 @@
 SET NODE_ENV=development
 SET LOG_LEVEL=verbose
-SET TEST_PROG=/test/
+SET LAUNCH_PROGRAM=/pdf/
 st_launcher %1
 SET NODE_ENV=
