@@ -20,7 +20,7 @@ async function tests() {
       }
     },
     terminal: {
-      output: "./data/output/pdf/list.json"
+      output: "./test/data/output/pdf/list.json"
     }
   })) return 1;
 

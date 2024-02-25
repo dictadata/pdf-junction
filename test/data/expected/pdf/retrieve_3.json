@@ -1,6 +1,7 @@
 {
-  "resultCode": 0,
-  "resultMessage": "OK",
+  "status": 0,
+  "message": "OK",
+  "type": "list",
   "data": [
     {
       "County": "Allamakee",

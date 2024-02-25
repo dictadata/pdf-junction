@@ -4,7 +4,7 @@
  */
 "use strict";
 
-const { PdfDataParser } = require("pdf-data-parser");
+const { PdfDataParser } = require("@dictadata/pdf-data-parser");
 const fs = require("fs");
 const path = require("path");
 
@@ -33,6 +33,6 @@ async function test(options) {
 }
 
 (async () => {
-  if (await test({ url: "./data/input/pdf/ClassCodes.pdf" })) return;
-  if (await test({ url: "./data/input/pdf/Nat_State_Topic_File_formats.pdf", heading: "Government Units File Format", cells: 3 })) return;
+  if (await test({ url: "./test/data/input/pdf/ClassCodes.pdf" })) return;
+  if (await test({ url: "./test/data/input/pdf/Nat_State_Topic_File_formats.pdf", heading: "Government Units File Format", cells: 3 })) return;
 })();

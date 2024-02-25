@@ -3,10 +3,10 @@
  */
 "use strict";
 
-const storage = require("@dictadata/storage-junctions");
+const { Storage } = require("@dictadata/storage-junctions");
 const { logger } = require("@dictadata/storage-junctions/utils");
 
 const PdfJunction = require("../storage/junctions/pdf");
 
-logger.info("--- adding PdfJunction to storage cortex");
-storage.use("pdf", PdfJunction);
+logger.info("--- adding PdfJunction to Storage classes");
+Storage.Junctions.use("pdf", PdfJunction);

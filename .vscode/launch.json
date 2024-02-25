@@ -5,39 +5,43 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
-      "name": "pdf parser",
-      "program": "${workspaceFolder}/test/pdf/parser.js",
+      "type": "node",
       "request": "launch",
+      "name": "pdf parser",
+      "cwd": "${workspaceFolder}",
+      "program": "test/pdf/parser.js",
       "skipFiles": [
         "<node_internals>/**"
       ]
     },
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
-      "name": "pdf codify",
-      "program": "${workspaceFolder}/test/pdf/codify.js",
+      "name": "reader codify",
+      "cwd": "${workspaceFolder}",
+      "program": "test/pdf/codify.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "verbose"
       }
     },
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
-      "name": "pdf retrieve",
-      "program": "${workspaceFolder}/test/pdf/retrieve.js",
+      "name": "junction retrieve",
+      "cwd": "${workspaceFolder}",
+      "program": "test/pdf/retrieve.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "verbose"
       }
     },
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
-      "name": "pdf transfer",
-      "program": "${workspaceFolder}/test/pdf/transfers.js",
+      "name": "transfer",
+      "cwd": "${workspaceFolder}",
+      "program": "test/pdf/transfers.js",
       "outputCapture": "std",
       "env": {
         "LOG_LEVEL": "verbose"
