@@ -4,10 +4,11 @@
 "use strict";
 
 const { StorageReader } = require('@dictadata/storage-junctions');
+const { PdfDataReader, RowAsObjects } = require('@dictadata/pdf-data-parser');
 const { logger } = require('@dictadata/storage-junctions/utils');
-const { PdfDataParser } = require('pdf-data-parser');
+const { pipeline } = require('node:stream/promises');
 
-module.exports = class PdfReader extends StorageReader {
+module.exports = class PDFReader extends StorageReader {
 
   /**
    *
@@ -28,19 +29,20 @@ module.exports = class PdfReader extends StorageReader {
     if (options.pageFooter) pdfOptions.pageFooter = options.pageFooter;
     if (options.repeatingHeaders) pdfOptions.repeatingHeaders = options.repeatingHeaders;
     if (options.lineHeight) pdfOptions.lineHeight = options.lineHeight;
+    if (options.headers) pdfOptions.headers = options.headers;
 
-    this.headers = options.headers || undefined;
+    let pdfReader = this.pdfReader = new PdfDataReader(pdfOptions);
+    let rowAsObjects = this.rowAsObjects = new RowAsObjects(pdfOptions);
 
+    var encoder = this.junction.createEncoder(options);
+
+    var reader = this;
     this.started = false;
 
-    var parser = this.parser = new PdfDataParser(pdfOptions);
-    var encoder = this.junction.createEncoder(options);
-    var reader = this;
-
     // eslint-disable-next-line arrow-parens
-    parser.on('data', (data) => {
-      if (data) {
-        let construct = this.rowAsObject(data);
+    rowAsObjects.on('data', (construct) => {
+      if (construct) {
+        //let construct = this.rowAsObject(data);
         construct = encoder.cast(construct);
         construct = encoder.filter(construct);
         construct = encoder.select(construct);
@@ -54,44 +56,51 @@ module.exports = class PdfReader extends StorageReader {
 
     });
 
-    parser.on('end', () => {
+    rowAsObjects.on('end', () => {
       reader.push(null);
     });
 
-    parser.on('error', function (err) {
+    rowAsObjects.on('error', function (err) {
       //logger.error(err);
       throw err;
     });
 
   }
 
-  rowAsObject(row) {
-    if (!this.headers) {
-      this.headers = row;
-      return null;
-    }
-    else {
-      let obj = {};
-      for (let i = 0; i < row.length; i++) {
-        let prop = (i < this.headers.length) ? this.headers[ i ] : i;
-        obj[ prop ] = row[ i ];
+  /*
+  async _construct(callback) {
+    logger.debug("PDFReader._construct");
+
+    try {
+      try {
+        // initialize
       }
-      return obj;
+      catch (err) {
+        logger.warn(`PDFReader read error: ${err.message}`);
+        this.destroy(err);
+      }
+
+      callback();
+    }
+    catch (err) {
+      logger.warn(err);
+      callback(new Error('PDFReader construct error'));
     }
   }
+  */
 
   /**
    * Fetch data from the underlying resource.
    * @param {*} size <number> Number of bytes to read asynchronously
    */
   async _read(size) {
-    logger.debug('PdfReader._read');
+    logger.debug('PDFReader._read');
 
     // read up to size constructs
     try {
       if (!this.started) {
         this.started = true;
-        this.parser.parse();
+        this.pdfReader.pipe(this.rowAsObjects);
       }
     }
     catch (err) {
