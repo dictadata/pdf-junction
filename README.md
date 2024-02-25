@@ -2,7 +2,7 @@
 
 Storage Junction plugin for reading tabular data in PDF documents.  Pdf-junction is a storage plugin for use with [_@dictadata/storage-junctions_](https://github.com/dictadata/storage-junctions) and related projects [_@dictadata/storage-etl_](https://github.com/dictadata/storage-etl) Command Line Interface (CLI) and [_@dictadata/storage-node_](https://github.com/dictadata/storage-node) API Server.
 
-The plugin uses the [pdf-data-parser](https://gitlab.com/drewlab/pdf-data-parser) module to parse the PDF documents.
+The plugin uses the [pdf-data-parser](https://github.com/dictadata/pdf-data-parser) module to parse the PDF documents.
 
 ## Installation
 
@@ -15,10 +15,10 @@ npm install @dictadata/storage-junctions @dictadata/pdf-junction
 Import the _Storage Junctions_ library and the _PDF Junction_ plugin.  Then register _PDF Junction_ with the _Storage Junctions_' `Cortex`. This will register _PDF Junction_ for use with storage model `"pdf"`.
 
 ```javascript
-const storage = require("@dictadata/storage-junctions");
+const { Storage } = require("@dictadata/storage-junctions");
 const PdfJunction = require("@dictadata/pdf-junction");
 
-storage.use("pdf", PdfJunction);
+Storage.Junctions.use("pdf", PdfJunction);
 ```
 
 ## Creating an instance of PDFJunction
@@ -26,7 +26,7 @@ storage.use("pdf", PdfJunction);
 Create an instance of `PDFJunction` class.
 
 ```javascript
-let junction = storage.Activate(smt, options);
+let junction = Storage.activate(smt, options);
 ```
 
 ### SMT
@@ -74,7 +74,7 @@ The following example creates an instance of `PdfReader` and collects streamed d
   async retrieveData() {
     let response = [];
 
-    let junction = storage.Activate(smt, options);
+    let junction = Storage.activate(smt, options);
     let reader = junction.createReader();
 
     reader.on('data', (construct) => {
@@ -122,7 +122,7 @@ An ETL Tracts file is a JSON object describing the storage source and storage de
   "transfer": {
     "action": "transfer",
     "origin": {
-      "smt": "pdf|./data/input/|foofile.pdf|*",
+      "smt": "pdf|./test/data/input/|foofile.pdf|*",
       "options": {
         "heading": "pdf section heading",
         "cells": 7,
@@ -130,7 +130,7 @@ An ETL Tracts file is a JSON object describing the storage source and storage de
       }
     },
     "terminal": {
-      "smt": "json|./data/output/|foofile.json|*"
+      "smt": "json|./test/data/output/|foofile.json|*"
     }
   },
   "plugins": {
@@ -145,7 +145,7 @@ An ETL Tracts file is a JSON object describing the storage source and storage de
 
 ### Hello World
 
-[HelloWorld.pdf](./data/input/pdf/helloworld.pdf) is a single page PDF document with the string "Hello, world!" positioned on the page. The parser output is one row with one cell.
+[HelloWorld.pdf](./test/data/input/pdf/helloworld.pdf) is a single page PDF document with the string "Hello, world!" positioned on the page. The parser output is one row with one cell.
 
 Create an ETL tract file named mytracts.json with one tract name hello_world.
 
@@ -154,10 +154,10 @@ Create an ETL tract file named mytracts.json with one tract name hello_world.
   "hello_world": {
     "action": "transfer",
     "origin": {
-      "smt": "pdf|./data/input/pdf/|helloworld.pdf|*",
+      "smt": "pdf|./test/data/input/pdf/|helloworld.pdf|*",
     },
     "terminal": {
-      "smt": "json|./data/output/pdf/|helloworld.json|*"
+      "smt": "json|./test/data/output/pdf/|helloworld.json|*"
     }
   },
   "plugins": {
@@ -182,4 +182,4 @@ The output is save in file helloworld.json which contains the data rows from the
 ]
 ```
 
-See the [pdf-data-parser](https://gitlab.com/drewlab/pdf-data-parser) project for more complex examples.
+See the [pdf-data-parser](https://github.com/dictadata/pdf-data-parser) project for more complex examples.

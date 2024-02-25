@@ -1,5 +1,7 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.7
+  - updated: @dictadata/pdf-data-parser@1.2.6
 - version 0.9.6
   - updated: pdf-data-parser@1.1.3
 - version 0.9.5
@@ -21,4 +23,3 @@
 - version 2.3.x
   - implement storage-junction interfaces
   - implement basic read and write streams
-  
