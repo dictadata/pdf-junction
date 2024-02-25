@@ -18,7 +18,10 @@
   "scripts": {
     "test": "testrunner.js"
   },
-  "repository": "github:dictadata/pdf-junction",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dictadata/pdf-junction.git"
+  },
   "homepage": "https://github.com/dictadata/pdf-junction#readme",
   "bugs": {
     "url": "https://github.com/dictadata/pdf-junction/issues"
