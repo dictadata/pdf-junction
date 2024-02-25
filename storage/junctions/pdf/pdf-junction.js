@@ -4,7 +4,7 @@
 "use strict";
 
 const { StorageJunction } = require('@dictadata/storage-junctions');
-const { StorageResponse, StorageError } = require('@dictadata/storage-junctions/types');
+const { StorageResults, StorageError } = require('@dictadata/storage-junctions/types');
 const { logger } = require('@dictadata/storage-junctions/utils');
 
 const PdfReader = require("./pdf-reader");
@@ -18,12 +18,12 @@ module.exports = class PdfJunction extends StorageJunction {
 
   // storage capabilities, sub-class must override
   capabilities = {
-    filesystem: false,  // storage source is filesystem
+    filesystem: false, // storage source is filesystem
     sql: false,        // storage source is SQL
     keystore: false,   // supports key-value storage
 
     encoding: false,   // get encoding from source
-    reader: true,     // stream reader
+    reader: true,      // stream reader
     writer: false,     // stream writer
     store: false,      // store/recall individual constructs
     query: false,      // select/filter data at source
@@ -67,14 +67,14 @@ module.exports = class PdfJunction extends StorageJunction {
    * @param {*} pattern
    */
   async retrieve(pattern) {
-    let response = new StorageResponse();
+    let response = new StorageResults("list");
     let rs = this.createReader(pattern);
 
     rs.on('data', (chunk) => {
       response.add(chunk);
     })
     rs.on('end', () => {
-      // console.log('There will be no more data.');
+      console.log('There will be no more data.');
     });
     rs.on('error', (err) => {
       response = new StorageError(500).inner(err);
