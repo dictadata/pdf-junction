@@ -1,7 +1,5 @@
 // storage/junctions/pdf-junction
 
-const PdfJunction = require("./pdf-junction");
-
-module.exports = exports = PdfJunction;
+module.exports = exports = require("./pdf-junction");
 exports.PdfReader = require("./pdf-reader");
 exports.PdfWriter = require("./pdf-writer");
