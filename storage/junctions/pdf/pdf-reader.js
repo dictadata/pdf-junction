@@ -54,12 +54,12 @@ module.exports = class PDFReader extends StorageReader {
 
       if (Object.hasOwn( this.pdfOptions,  "RepeatCell.column") || Object.hasOwn( this.pdfOptions, "column")) {
         let transform = new RepeatCellTransform(this.pdfOptions);
-        pipes.push(transform);
+        this.pipes.push(transform);
       }
 
       if (Object.hasOwn( this.pdfOptions, "RepeatHeading.header") || Object.hasOwn( this.pdfOptions, "header")) {
         let transform = new RepeatHeadingTransform(this.pdfOptions);
-        pipes.push(transform);
+        this.pipes.push(transform);
       }
 
       let rowAsObjects = new RowAsObjectTransform(this.pdfOptions);

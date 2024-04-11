@@ -67,6 +67,39 @@ async function tests() {
     }
   })) return 1;
 
+  logger.info("=== pdf retrieve repeating cell");
+  if (await retrieve({
+    origin: {
+      smt: "pdf|./test/data/input/pdf/state_voter_registration_jan2024.pdf||*",
+      options: {
+        pages: [ 1 ],
+        pageHeader: 64,
+        cells: 7,
+        column: 0
+      },
+      pattern: {}
+    },
+    terminal: {
+      output: "./test/data/output/pdf/retrieve_4.json"
+    }
+  })) return 1;
+
+  logger.info("=== pdf retrieve repeating heading");
+  if (await retrieve({
+    origin: {
+      smt: "pdf|./test/data/input/pdf/state_voter_registration_jan2024.pdf||*",
+      options: {
+        pages: [ 2 ],
+        pageHeader: 64,
+        header: "County:1"
+      },
+      pattern: {}
+    },
+    terminal: {
+      output: "./test/data/output/pdf/retrieve_5.json"
+    }
+  })) return 1;
+
 }
 
 (async () => {

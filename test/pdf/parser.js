@@ -34,5 +34,16 @@ async function test(options) {
 
 (async () => {
   if (await test({ url: "./test/data/input/pdf/ClassCodes.pdf" })) return;
-  if (await test({ url: "./test/data/input/pdf/Nat_State_Topic_File_formats.pdf", heading: "Government Units File Format", cells: 3 })) return;
+  if (await test({
+    url: "./test/data/input/pdf/Nat_State_Topic_File_formats.pdf",
+    heading: "Government Units File Format",
+    cells: 3,
+    orderXY: false
+  })) return;
+  if (await test({
+    url: "./test/data/input/pdf/state_voter_registration_jan2024.pdf",
+    pages: "1-5",
+    pageHeader: 64,
+    cells: 7
+  })) return;
 })();
