@@ -3,7 +3,7 @@
  */
 "use strict";
 
-const { StorageWriter, StorageError } = require('@dictadata/storage-junctions');
+const { StorageWriter } = require('@dictadata/storage-junctions');
 const { logger } = require('@dictadata/storage-junctions/utils');
 
 module.exports = class PdfWriter extends StorageWriter {
@@ -35,7 +35,7 @@ module.exports = class PdfWriter extends StorageWriter {
     }
     catch (err) {
       logger.error(err.message);
-      callback(err);
+      callback(this.junction.StorageError(err));
     }
 
   }
@@ -55,7 +55,7 @@ module.exports = class PdfWriter extends StorageWriter {
     }
     catch (err) {
       logger.error(err);
-      callback(new StorageError({ statusCode: 500, _error: err }, 'Error storing construct'));
+      callback(this.junction.StorageError(err));
     }
   }
 
@@ -66,8 +66,8 @@ module.exports = class PdfWriter extends StorageWriter {
       // close connection, cleanup resources, ...
     }
     catch (err) {
-      logger.error(err.message);
-      callback(new StorageError({ statusCode: 500, _error: err }, 'Error storing construct'));
+      logger.warn(err.message);
+      callback(this.junction.StorageError(err));
     }
     callback();
   }

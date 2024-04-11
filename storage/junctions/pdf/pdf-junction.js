@@ -4,7 +4,7 @@
 "use strict";
 
 const { StorageJunction } = require('@dictadata/storage-junctions');
-const { StorageResults, StorageError } = require('@dictadata/storage-junctions/types');
+const { StorageResults } = require('@dictadata/storage-junctions/types');
 const { logger } = require('@dictadata/storage-junctions/utils');
 
 const PdfReader = require("./pdf-reader");
@@ -77,7 +77,7 @@ module.exports = class PdfJunction extends StorageJunction {
       console.log('There will be no more data.');
     });
     rs.on('error', (err) => {
-      response = new StorageError(500).inner(err);
+      response = this.StorageError(err);
     });
 
     await stream.finished(rs);
