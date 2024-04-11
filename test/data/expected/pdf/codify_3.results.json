@@ -1,6 +1,6 @@
 {
   "type": "engram",
-  "name": "*",
+  "name": "codify",
   "smt": {
     "model": "*",
     "locus": "*",
