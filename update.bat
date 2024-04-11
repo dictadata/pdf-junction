@@ -1,1 +1,1 @@
-npm i @dictadata/storage-junctions@latest @dictadata/pdf-data-parser@latest
+npm i @dictadata/storage-junctions@latest pdf-data-parser@latest
