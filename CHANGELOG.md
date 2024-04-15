@@ -1,5 +1,9 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.9
+  -
+  - updated: @dictadata/storage-junctions@0.9.111
+  - updated: pdf-data-parser@1.2.7
 - version 0.9.8
   - updated: @dictadata/storage-junctions@0.9.107
 - version 0.9.7
