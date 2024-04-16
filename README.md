@@ -52,6 +52,8 @@ let SMT = {
 
 `{string|regexp} heading` - Section heading in the document after which the parser will look for tabular data; optional, default: none. The parser does a string comparison or match looking for first occurrence of `heading` value in the first cell of rows, row[0]. If not specified then data output starts with first row of the document.
 
+`{string|regexp} stopHeading` - Section heading or text in the document after the tabular data; optional, default: none. The parser does a string comparison or regexp match looking for occurrence of `stopHeading` value in the first cell of rows. If not specified then data output stops on value of `cells` or the end of document.
+
 `{integer} cells` - Minimum number of cells in tabular data; optional, default: 1. After `heading` string is found parser will look for the first row that contains at least `cells` count of cells. The parser will output rows until it encounters a row with less than `cells` count of cells.
 
 `{boolean} newlines` - Preserve new lines in cell data; optional, default: false. When false newlines will be replaced by spaces. Preserving newlines characters will keep the formatting of multiline text such as descriptions. Though, newlines are problematic for cells containing multiword identifiers and keywords that might be wrapped in the PDF text.
