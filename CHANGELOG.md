@@ -1,9 +1,15 @@
 # @dictadata/pdf-junction Change Log
 
 - version 0.9.9
-  -
+  - feature: support non-Marked, line oriented PDF content, e.g. printer style output to PDF files
+  - feature: add options.pages to limit parsing to specific pages
+  - feature: add options.stopHeading
+  - feature: add RepeatCell and RepeatHeading transforms to normalize rows from printed reports
+  - updated: README documentation
+  - refactor: improved handling of XY coordinates for determining cell order
+  - refactor: error handling, StorageError usage
+  - updated: pdf-data-parser@1.2.8
   - updated: @dictadata/storage-junctions@0.9.111
-  - updated: pdf-data-parser@1.2.7
 - version 0.9.8
   - updated: @dictadata/storage-junctions@0.9.107
 - version 0.9.7

@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "@dictadata/storage-junctions": "^0.9.111",
-    "pdf-data-parser": "^1.2.7"
+    "pdf-data-parser": "^1.2.8"
   }
 }
