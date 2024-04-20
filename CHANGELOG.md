@@ -1,5 +1,8 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.10
+  - bug fix: correct require("pdf-data-parser") module name
+  - updated: pdf-data-parser@1.2.9
 - version 0.9.9
   - feature: support non-Marked, line oriented PDF content, e.g. printer style output to PDF files
   - feature: add options.pages to limit parsing to specific pages
@@ -13,7 +16,7 @@
 - version 0.9.8
   - updated: @dictadata/storage-junctions@0.9.107
 - version 0.9.7
-  - updated: @dictadata/pdf-data-parser@1.2.6
+  - updated: pdf-data-parser@1.2.6
 - version 0.9.6
   - updated: pdf-data-parser@1.1.3
 - version 0.9.5
