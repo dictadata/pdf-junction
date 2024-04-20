@@ -4,7 +4,7 @@
 "use strict";
 
 const { StorageReader } = require('@dictadata/storage-junctions');
-const { PdfDataReader, RowAsObjectTransform, RepeatCellTransform, RepeatHeadingTransform } = require('@dictadata/pdf-data-parser');
+const { PdfDataReader, RowAsObjectTransform, RepeatCellTransform, RepeatHeadingTransform } = require('pdf-data-parser');
 const { StorageError } = require('@dictadata/storage-junctions/types');
 const { logger } = require('@dictadata/storage-junctions/utils');
 const { pipeline } = require('node:stream/promises');

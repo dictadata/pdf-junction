@@ -4,7 +4,7 @@
  */
 "use strict";
 
-const { PdfDataParser } = require("@dictadata/pdf-data-parser");
+const { PdfDataParser } = require("pdf-data-parser");
 const fs = require("fs");
 const path = require("path");
 
