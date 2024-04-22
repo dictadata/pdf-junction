@@ -1,10 +1,10 @@
 {
-  "name": "codify",
+  "name": "helloworld.pdf",
   "type": "engram",
   "smt": {
-    "model": "*",
-    "locus": "*",
-    "schema": "*",
+    "model": "pdf",
+    "locus": "./test/data/input/pdf/",
+    "schema": "helloworld.pdf",
     "key": "*"
   },
   "fields": [

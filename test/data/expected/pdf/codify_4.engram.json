@@ -1,0 +1,54 @@
+{
+  "name": "state_voter_registration_jan2024.pdf",
+  "type": "engram",
+  "smt": {
+    "model": "pdf",
+    "locus": "file:/var/dictadata/US/AZ/azsos.gov/election/VoterReg/2024/",
+    "schema": "state_voter_registration_jan2024.pdf",
+    "key": "*"
+  },
+  "fields": [
+    {
+      "name": "County",
+      "type": "text",
+      "size": 11
+    },
+    {
+      "name": "Precincts",
+      "type": "integer"
+    },
+    {
+      "name": "Date/Period",
+      "type": "text",
+      "size": 8
+    },
+    {
+      "name": "Democratic",
+      "type": "integer"
+    },
+    {
+      "name": "Green",
+      "type": "integer"
+    },
+    {
+      "name": "Libertarian",
+      "type": "integer"
+    },
+    {
+      "name": "No Labels",
+      "type": "integer"
+    },
+    {
+      "name": "Republican",
+      "type": "integer"
+    },
+    {
+      "name": "Other",
+      "type": "integer"
+    },
+    {
+      "name": "Total ",
+      "type": "integer"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "name": "codify",
+  "name": "Nat_State_Topic_File_formats.pdf",
   "type": "engram",
   "smt": {
-    "model": "*",
-    "locus": "*",
-    "schema": "*",
+    "model": "pdf",
+    "locus": "./test/data/input/pdf/",
+    "schema": "Nat_State_Topic_File_formats.pdf",
     "key": "*"
   },
   "fields": [

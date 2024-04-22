@@ -1,10 +1,10 @@
 {
-  "name": "codify",
+  "name": "ClassCodes.pdf",
   "type": "engram",
   "smt": {
-    "model": "*",
-    "locus": "*",
-    "schema": "*",
+    "model": "pdf",
+    "locus": "./test/data/input/pdf/",
+    "schema": "ClassCodes.pdf",
     "key": "*"
   },
   "fields": [

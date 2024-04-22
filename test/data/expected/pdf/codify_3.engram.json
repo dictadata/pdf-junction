@@ -1,10 +1,10 @@
 {
+  "name": "CongNov22.pdf",
   "type": "engram",
-  "name": "codify",
   "smt": {
-    "model": "*",
-    "locus": "*",
-    "schema": "*",
+    "model": "pdf",
+    "locus": "./test/data/input/pdf/",
+    "schema": "CongNov22.pdf",
     "key": "*"
   },
   "fields": [
