@@ -1,5 +1,8 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.11
+  - updated: codify tests with missing values
+  - updated: @dictadata/storage-junctions@0.9.112
 - version 0.9.10
   - bug fix: correct require("pdf-data-parser") module name
   - updated: pdf-data-parser@1.2.9
