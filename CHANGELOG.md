@@ -1,5 +1,9 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.12
+  - refactor: PdfDataParser trim trailing whitespace from values
+  - updated: pdf-data-parser@1.2.12
+  - updated: @dictadata/storage-junctions@0.9.113
 - version 0.9.11
   - updated: codify tests with missing values
   - updated: @dictadata/storage-junctions@0.9.112

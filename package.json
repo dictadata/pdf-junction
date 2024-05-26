@@ -1,6 +1,6 @@
 {
   "name": "@dictadata/pdf-junction",
-  "version": "0.9.11",
+  "version": "0.9.12",
   "description": "Storage junction for PDF tabular data.",
   "author": "Drew O. Letcher",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "eslint": "^9.1.0"
   },
   "dependencies": {
-    "@dictadata/storage-junctions": "^0.9.112",
-    "pdf-data-parser": "^1.2.9"
+    "@dictadata/storage-junctions": "^0.9.113",
+    "pdf-data-parser": "^1.2.12"
   }
 }
