@@ -65,7 +65,7 @@ async function tests() {
   logger.verbose("=== codify voter_registration");
   if (await codify({
     origin: {
-      smt: "pdf|file:/var/dictadata/US/AZ/azsos.gov/election/VoterReg/2024/|state_voter_registration_jan2024.pdf|*",
+      smt: "pdf|file:/var/dictadata/AZ/azsos.gov/election/VoterReg/2024/|state_voter_registration_jan2024.pdf|*",
       "options": {
         "pages": [ 1 ],
         "pageHeader": 64,
