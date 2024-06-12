@@ -6,7 +6,7 @@
 const { StorageReader } = require('@dictadata/storage-junctions');
 const { PdfDataReader, RowAsObjectTransform, RepeatCellTransform, RepeatHeadingTransform } = require('pdf-data-parser');
 const { StorageError } = require('@dictadata/storage-junctions/types');
-const { logger } = require('@dictadata/storage-junctions/utils');
+const { logger } = require("@dictadata/lib");
 const { pipeline } = require('node:stream/promises');
 
 module.exports = class PDFReader extends StorageReader {

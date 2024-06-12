@@ -3,9 +3,9 @@
  */
 "use strict";
 
-require("../register");
+require("../_register");
 const { transfer } = require("@dictadata/storage-junctions/test");
-const { logger } = require("@dictadata/storage-junctions/utils");
+const { logger } = require("@dictadata/lib");
 
 logger.info("=== Test: pdf");
 

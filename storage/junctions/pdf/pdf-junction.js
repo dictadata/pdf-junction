@@ -5,7 +5,7 @@
 
 const { StorageJunction } = require('@dictadata/storage-junctions');
 const { StorageResults } = require('@dictadata/storage-junctions/types');
-const { logger } = require('@dictadata/storage-junctions/utils');
+const { logger } = require("@dictadata/lib");
 
 const PdfReader = require("./pdf-reader");
 //const PdfWriter = require("./pdf-writer");

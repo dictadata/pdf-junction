@@ -3,8 +3,8 @@
  */
 "use strict";
 
-require("../register");
-const { logger } = require('@dictadata/storage-junctions/utils');
+require("../_register");
+const { logger } = require("@dictadata/lib");
 const { list } = require('@dictadata/storage-junctions/test');
 
 logger.info("=== tests: pdf list");

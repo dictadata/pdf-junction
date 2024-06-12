@@ -1,2 +1,2 @@
-call npm link @dictadata/storage-junctions pdf-data-parser
+call npm link @dictadata/lib @dictadata/storage-junctions pdf-data-parser
 dir node_modules\@dictadata

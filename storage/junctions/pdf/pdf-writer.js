@@ -4,7 +4,7 @@
 "use strict";
 
 const { StorageWriter } = require('@dictadata/storage-junctions');
-const { logger } = require('@dictadata/storage-junctions/utils');
+const { logger } = require("@dictadata/lib");
 
 module.exports = class PdfWriter extends StorageWriter {
 
