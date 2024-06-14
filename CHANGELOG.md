@@ -1,5 +1,8 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.14
+  - tests: set NODE_ENV=development
+  - updated: pdf-data-parser@1.2.14
 - version 0.9.13
   - refactor: use utils modules from @dictadata/lib
   - updated: pdf-data-parser@1.2.13
