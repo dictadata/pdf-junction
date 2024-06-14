@@ -27,11 +27,11 @@
     "url": "https://github.com/dictadata/pdf-junction/issues"
   },
   "devDependencies": {
-    "eslint": "^9.1.0"
+    "eslint": "^9.4.0"
   },
   "dependencies": {
     "@dictadata/lib": "github:dictadata/lib#semver:1.0",
     "@dictadata/storage-junctions": "^0.9.114",
-    "pdf-data-parser": "^1.2.13"
+    "pdf-data-parser": "^1.2.14"
   }
 }

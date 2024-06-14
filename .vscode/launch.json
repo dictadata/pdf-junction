@@ -17,33 +17,36 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "reader codify",
+      "name": "pdf codify",
       "cwd": "${workspaceFolder}",
       "program": "test/pdf/codify.js",
       "outputCapture": "std",
       "env": {
+        "NODE_ENV": "development",
         "LOG_LEVEL": "verbose"
       }
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "junction retrieve",
+      "name": "pdf retrieve",
       "cwd": "${workspaceFolder}",
       "program": "test/pdf/retrieve.js",
       "outputCapture": "std",
       "env": {
+        "NODE_ENV": "development",
         "LOG_LEVEL": "verbose"
       }
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "transfer",
+      "name": "pdf transfer",
       "cwd": "${workspaceFolder}",
       "program": "test/pdf/transfers.js",
       "outputCapture": "std",
       "env": {
+        "NODE_ENV": "development",
         "LOG_LEVEL": "verbose"
       }
     }
