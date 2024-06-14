@@ -68,6 +68,8 @@ let SMT = {
 
 `{Integer} lineHeight` - Approximate line height ratio based on font size; default 1.67. The parser extracts font size from the pdf content. The line height ratio maybe used when comparing the position of content items on the page.
 
+`{boolean} trim` - trim whitespace from output values, default: true.
+
 ## Streaming Usage
 
 The following example creates an instance of `PdfReader` and collects streamed data into an array. In this case the storage construct is an object representing a row of cells from the PDF document. `PdfReader` is derived from Node.js stream Readable. So the reader can be the source of any Node.js pipeline.
