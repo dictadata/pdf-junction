@@ -1,7 +1,8 @@
 # @dictadata/pdf-junction Change Log
 
 - version 0.9.15
-  - updated: @dictadata/storage-junctions@0.9.117
+  - refactor: reader/writer implement _stats and options.count
+  - updated: @dictadata/storage-junctions@0.9.118
 - version 0.9.14
   - tests: set NODE_ENV=development
   - updated: pdf-data-parser@1.2.14

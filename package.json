@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@dictadata/lib": "github:dictadata/lib#semver:1.0",
-    "@dictadata/storage-junctions": "^0.9.117",
+    "@dictadata/storage-junctions": "^0.9.118",
     "pdf-data-parser": "^1.2.14"
   }
 }
