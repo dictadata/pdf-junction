@@ -1,6 +1,6 @@
 {
   "name": "@dictadata/pdf-junction",
-  "version": "0.9.14",
+  "version": "0.9.15",
   "description": "dictadata StorageJunctions plugin for PDF tabular data.",
   "author": "Drew O. Letcher",
   "license": "MIT",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@dictadata/lib": "github:dictadata/lib#semver:1.0",
-    "@dictadata/storage-junctions": "^0.9.114",
+    "@dictadata/storage-junctions": "^0.9.117",
     "pdf-data-parser": "^1.2.14"
   }
 }

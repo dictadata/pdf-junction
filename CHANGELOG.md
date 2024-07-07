@@ -1,5 +1,7 @@
 # @dictadata/pdf-junction Change Log
 
+- version 0.9.15
+  - updated: @dictadata/storage-junctions@0.9.117
 - version 0.9.14
   - tests: set NODE_ENV=development
   - updated: pdf-data-parser@1.2.14
