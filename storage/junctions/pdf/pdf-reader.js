@@ -61,6 +61,8 @@ module.exports = class PDFReader extends StorageReader {
       var encoder = this.junction.createEncoder(this.options);
 
       var reader = this;
+      var _stats = this._stats;
+      var count = this.options?.pattern?.count || this.options?.count || -1;
       this.started = false;
 
       // eslint-disable-next-line arrow-parens
@@ -72,7 +74,16 @@ module.exports = class PDFReader extends StorageReader {
           construct = encoder.select(construct);
           //logger.debug(JSON.stringify(construct));
 
-          if (construct) {
+          if ((_stats.count + 1) % 10000 === 0) {
+            logger.verbose(_stats.count + " " + _stats.interval + "ms");
+          }
+
+          if (count > 0 && _stats.count > count) {
+            reader.push(null);
+            pdfReader.destroy();
+          }
+          else if (construct) {
+            _stats.count += 1;
             reader.push(construct);
             //parser.pause();  // If push() returns false stop reading from source.
           }

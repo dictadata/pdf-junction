@@ -29,6 +29,7 @@ module.exports = class PdfWriter extends StorageWriter {
 
     try {
       // save construct to .schema
+      this._stats.count += 1;
       await this.junction.store(construct);
 
       callback();
