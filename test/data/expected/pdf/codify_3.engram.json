@@ -10,7 +10,7 @@
   "fields": [
     {
       "name": "County",
-      "type": "text",
+      "type": "keyword",
       "size": 10
     },
     {

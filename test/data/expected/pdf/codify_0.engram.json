@@ -10,7 +10,7 @@
   "fields": [
     {
       "name": "Greating",
-      "type": "text",
+      "type": "keyword",
       "size": 13
     }
   ]
