@@ -2,5 +2,4 @@
  * @dictadata/storage
  */
 
-var PdfJunction = require("./junctions/pdf");
-module.exports = PdfJunction;
+module.exports = exports = require("./junctions/pdf");
