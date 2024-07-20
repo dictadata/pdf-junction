@@ -10,6 +10,22 @@ const { logger } = require("@dictadata/lib");
 logger.info("=== Test: pdf");
 
 async function tests() {
+
+  logger.info("=== pdf transfer helloworld");
+  if (await transfer({
+    origin: {
+      smt: "pdf|./test/data/input/pdf/|2023-Registered-Voter-Count.pdf|*",
+      options: {
+        pageHeader: 120,
+        cells: 3
+      }
+    },
+    terminal: {
+      smt: "json|./test/data/output/pdf/|transfer_rv_count.json|*",
+      output: "./test/data/output/pdf/transfer_rv_count.json"
+    }
+  })) return 1;
+
   logger.info("=== pdf transfer helloworld");
   if (await transfer({
     origin: {
