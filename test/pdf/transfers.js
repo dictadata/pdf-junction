@@ -89,7 +89,8 @@ async function tests() {
       options: {
         pages: [ 1 ],
         pageHeader: 64,
-        cells: 7,
+        cells: 9,
+        missingValue: "*",
         column: 0
       },
       pattern: {}
@@ -107,7 +108,7 @@ async function tests() {
       options: {
         pages: [ 2 ],
         pageHeader: 64,
-        header: "County:1"
+        header: "County:1:0"
       },
       pattern: {}
     },

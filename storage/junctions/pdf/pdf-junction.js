@@ -41,14 +41,6 @@ module.exports = class PdfJunction extends StorageJunction {
 
     this._readerClass = PdfReader;
     //this._writerClass = PdfWriter;
-
-    if (options.encoding && !options.headers) {
-      let fields = options.encoding.fields || options.encoding;
-      this.options.headers = fields.reduce((accumulator, value) => {
-        accumulator.push(value.name);
-        return accumulator;
-      }, [])
-    }
   }
 
   /**

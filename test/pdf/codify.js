@@ -70,8 +70,8 @@ async function tests() {
         "pages": [ 1 ],
         "pageHeader": 64,
         "cells": 9,
-        "RepeatCell.column": 0,
-        "missingValue": "*"
+        "missingValue": "*",
+        "RepeatCell.column": 0
       }
     },
     "terminal": {
