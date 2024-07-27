@@ -13,7 +13,6 @@ const PdfReader = require("./pdf-reader");
 
 const stream = require("stream/promises");
 
-
 module.exports = class PdfJunction extends StorageJunction {
 
   // storage capabilities, sub-class must override

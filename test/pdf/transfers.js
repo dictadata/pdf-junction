@@ -14,21 +14,6 @@ async function tests() {
   logger.info("=== pdf transfer helloworld");
   if (await transfer({
     origin: {
-      smt: "pdf|./test/data/input/pdf/|2023-Registered-Voter-Count.pdf|*",
-      options: {
-        pageHeader: 120,
-        cells: 3
-      }
-    },
-    terminal: {
-      smt: "json|./test/data/output/pdf/|transfer_rv_count.json|*",
-      output: "./test/data/output/pdf/transfer_rv_count.json"
-    }
-  })) return 1;
-
-  logger.info("=== pdf transfer helloworld");
-  if (await transfer({
-    origin: {
       smt: "pdf|./test/data/input/pdf/|helloworld.pdf|*",
       options: {
         headers: [ "Greating" ]
@@ -115,6 +100,24 @@ async function tests() {
     terminal: {
       smt: "json|./test/data/output/pdf/|transfer_5.json|*",
       output: "./test/data/output/pdf/transfer_5.json"
+    }
+  })) return 1;
+
+  logger.info("=== pdf transfer helloworld");
+  if (await transfer({
+    origin: {
+      smt: "pdf|./test/data/input/pdf/|2023-Registered-Voter-Count.pdf|*",
+      options: {
+        pageHeader: 120,
+        repeatingHeaders: true,
+        cells: 3,
+        hasHeader: true,
+        headers: [ "County", "Active", "Registered" ]
+      }
+    },
+    terminal: {
+      smt: "json|./test/data/output/pdf/|transfer_rv_count.json|*",
+      output: "./test/data/output/pdf/transfer_rv_count.json"
     }
   })) return 1;
 
