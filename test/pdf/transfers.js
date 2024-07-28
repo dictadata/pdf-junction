@@ -108,11 +108,15 @@ async function tests() {
     origin: {
       smt: "pdf|./test/data/input/pdf/|2023-Registered-Voter-Count.pdf|*",
       options: {
-        pageHeader: 120,
+        pageHeader: 125,
         repeatingHeaders: true,
         cells: 3,
         hasHeader: true,
-        headers: [ "County", "Active", "Registered" ]
+        encoding: {
+          "County": "keyword",
+          "Active": "integer",
+          "Registered": "integer"
+        }
       }
     },
     terminal: {
